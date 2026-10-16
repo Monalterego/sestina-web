@@ -39,11 +39,11 @@
 
     <h2 id="deleted">3. What is deleted</h2>
     <ul>
-      <li>Your account: email address, name, sign-in details</li>
+      <li>Your account: email address, name, sign-in details, the record of your age and consent confirmations</li>
       <li>Your style profile and physical profile (height, weight, age, body type, skin and hair details)</li>
       <li>All items in your wardrobe and the information AI extracted from them</li>
       <li>All your photos: clothing images and thumbnails, your profile photo, AI mannequin and virtual try-on result images</li>
-      <li>Your outfits, worn history (calendar) and favorites</li>
+      <li>Your outfits, worn and planned outfits (calendar) and favorites</li>
       <li>Your virtual try-on quota records and daily usage counters</li>
     </ul>
     <p>If you signed in with Apple, our Sign in with Apple authorization is revoked; if you signed in with Google, the access you granted is withdrawn.</p>
@@ -51,9 +51,9 @@
     <h2 id="not-deleted">4. What is not deleted or is outside our control</h2>
     <ul>
       <li><strong>Purchase records:</strong> your App Store or Google Play purchase and billing records are kept by Apple or Google; we cannot delete them. <mark class="dogrula">[[DOĞRULA: RevenueCat entegre edildi — RevenueCat'teki müşteri kaydı silinecek mi, nasıl]]</mark></li>
-      <li><strong>Data already sent to service providers:</strong> images sent for clothing analysis, background removal and virtual try-on are subject to those providers’ own retention rules. <mark class="dogrula">[[DOĞRULA: Anthropic, Poof, FASHN saklama süreleri]]</mark></li>
+      <li><strong>Data already sent to service providers:</strong> each provider’s own periods apply. Anthropic deletes API inputs and outputs within 30 days. FASHN deletes generated images after 72 hours; the image links we sent stay in FASHN’s request history, but because they expire after 10 minutes the images cannot be accessed. Poof deletes images immediately after returning the result. Details: <a href="privacy.html#third-parties">Privacy Policy, section 5</a>.</li>
       <li><strong>Server logs and backups:</strong> <mark class="dogrula">[[DOĞRULA: Supabase log ve yedek saklama süresi — kullanıcı kimliği loglarda ne kadar kalır]]</mark></li>
-      <li><strong>Support correspondence:</strong> emails about your deletion request may be kept to show that we fulfilled it. <mark class="dogrula">[[DOĞRULA: destek yazışmaları saklama süresi]]</mark></li>
+      <li><strong>Support correspondence:</strong> emails about your deletion request may be kept to show that we fulfilled it. <mark class="dogrula">[[DOĞRULA: destek yazışmaları saklama süresi (hukuki karar)]]</mark></li>
       <li><strong>Data on your device:</strong> you are signed out; device preferences such as language are removed when you uninstall the app.</li>
     </ul>
 
@@ -63,7 +63,13 @@
       <li>By email: within 30 days of receiving your request.</li>
     </ul>
 
-    <p>If you want to delete only some of your data without deleting your account, you can delete clothing items one by one and edit your physical profile. For other requests, write to <a href="mailto:support@sestinaapp.com">support@sestinaapp.com</a>. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+    <h2 id="partial">6. Deleting some data without deleting your account</h2>
+    <ul>
+      <li><strong>Clothing items:</strong> delete them from your wardrobe; their images and any virtual try-on images containing them are deleted too.</li>
+      <li><strong>Profile photo:</strong> Profile → <strong>Remove Photo</strong>; your photo and virtual try-on result images are deleted.</li>
+      <li><strong>Physical profile and photos:</strong> Profile → <strong>Withdraw My Consent</strong>; your physical information, profile photo, AI mannequin and all virtual try-on images are deleted. Your wardrobe and outfits remain.</li>
+    </ul>
+    <p>For other requests, write to <a href="mailto:support@sestinaapp.com">support@sestinaapp.com</a>. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
 
     <footer class="site">
       <a href="./">Home</a> · <a href="privacy.html">Privacy Policy</a> · <a href="hesap-silme.html" lang="tr">Türkçe</a>

@@ -39,11 +39,11 @@
 
     <h2 id="silinenler">3. Silinen veriler</h2>
     <ul>
-      <li>Hesabın: e-posta adresin, adın, giriş bilgilerin</li>
+      <li>Hesabın: e-posta adresin, adın, giriş bilgilerin, yaş ve rıza onaylarının kaydı</li>
       <li>Stil profilin ve fiziksel profilin (boy, kilo, yaş, vücut tipi, ten ve saç bilgileri)</li>
       <li>Dolabındaki tüm kıyafetler ve yapay zekânın çıkardığı bilgiler</li>
       <li>Tüm fotoğrafların: kıyafet görselleri ve önizlemeleri, profil fotoğrafın, yapay manken ve sanal deneme sonuç görselleri</li>
-      <li>Kombinlerin, giydiklerin (takvim) ve favorilerin</li>
+      <li>Kombinlerin, giydiğin ve planladığın kombinler (takvim) ve favorilerin</li>
       <li>Sanal deneme kota kayıtların ve günlük kullanım sayaçların</li>
     </ul>
     <p>Apple ile giriş yaptıysan Apple’daki giriş yetkimiz iptal edilir; Google ile giriş yaptıysan Google hesabına verdiğin erişim geri alınır.</p>
@@ -51,9 +51,9 @@
     <h2 id="silinmeyenler">4. Silinmeyen veya bizim kontrolümüzde olmayan veriler</h2>
     <ul>
       <li><strong>Satın alma kayıtları:</strong> App Store veya Google Play’deki satın alma ve fatura kayıtların Apple ya da Google tarafından tutulur; bunları biz silemeyiz. <mark class="dogrula">[[DOĞRULA: RevenueCat entegre edildi — RevenueCat'teki müşteri kaydı silinecek mi, nasıl]]</mark></li>
-      <li><strong>Servis sağlayıcılara daha önce iletilmiş veriler:</strong> kıyafet analizi, arka plan kaldırma ve sanal deneme için gönderilmiş görseller sağlayıcıların kendi saklama kurallarına tabidir. <mark class="dogrula">[[DOĞRULA: Anthropic, Poof, FASHN saklama süreleri]]</mark></li>
+      <li><strong>Servis sağlayıcılara daha önce iletilmiş veriler:</strong> sağlayıcıların kendi süreleri geçerlidir. Anthropic API girdi ve çıktılarını 30 gün içinde siler. FASHN ürettiği görselleri 72 saat sonra siler; gönderdiğimiz görsel bağlantıları FASHN’ın istek geçmişinde kalır, ancak bu bağlantılar 10 dakikada geçersiz olduğu için görsellere erişilemez. Poof görselleri sonuç döndükten hemen sonra siler. Ayrıntılar: <a href="gizlilik.html#ucuncu">Gizlilik Politikası, bölüm 5</a>.</li>
       <li><strong>Sunucu kayıtları ve yedekler:</strong> <mark class="dogrula">[[DOĞRULA: Supabase log ve yedek saklama süresi — kullanıcı kimliği loglarda ne kadar kalır]]</mark></li>
-      <li><strong>Destek yazışmaları:</strong> silme talebine ilişkin e-postalar, talebi yerine getirdiğimizi gösterebilmek için saklanabilir. <mark class="dogrula">[[DOĞRULA: destek yazışmaları saklama süresi]]</mark></li>
+      <li><strong>Destek yazışmaları:</strong> silme talebine ilişkin e-postalar, talebi yerine getirdiğimizi gösterebilmek için saklanabilir. <mark class="dogrula">[[DOĞRULA: destek yazışmaları saklama süresi (hukuki karar)]]</mark></li>
       <li><strong>Cihazındaki veriler:</strong> oturum kapanır; dil gibi cihaz tercihleri uygulamayı kaldırdığında silinir.</li>
     </ul>
 
@@ -63,7 +63,13 @@
       <li>E-postayla: talebini aldıktan sonra en geç 30 gün içinde.</li>
     </ul>
 
-    <p>Hesabını silmeden yalnızca bazı verilerini silmek istersen: kıyafetleri dolabından tek tek silebilir, fiziksel profilini düzenleyebilirsin. Diğer talepler için <a href="mailto:support@sestinaapp.com">support@sestinaapp.com</a> adresine yaz. Ayrıntılar için <a href="gizlilik.html">Gizlilik Politikası</a>’na bak.</p>
+    <h2 id="kismi">6. Hesabını silmeden bazı verilerini silmek</h2>
+    <ul>
+      <li><strong>Kıyafet:</strong> dolabından sil; görselleri ve o kıyafeti içeren sanal deneme görselleri de silinir.</li>
+      <li><strong>Profil fotoğrafı:</strong> Profil → <strong>Fotoğrafı Kaldır</strong>; fotoğrafın ve sanal deneme sonuç görsellerin silinir.</li>
+      <li><strong>Fiziksel profil ve fotoğraflar:</strong> Profil → <strong>Rızamı Geri Çek</strong>; fiziksel bilgilerin, profil fotoğrafın, yapay manken ve tüm sanal deneme görsellerin silinir. Dolabın ve kombinlerin kalır.</li>
+    </ul>
+    <p>Diğer talepler için <a href="mailto:support@sestinaapp.com">support@sestinaapp.com</a> adresine yaz. Ayrıntılar için <a href="gizlilik.html">Gizlilik Politikası</a>’na bak.</p>
 
     <footer class="site">
       <a href="./">Ana sayfa</a> · <a href="gizlilik.html">Gizlilik Politikası</a> · <a href="delete-account.html" lang="en">English</a>

@@ -131,6 +131,8 @@ th, td {
 }
 th { background: var(--surface); font-weight: 600; }
 tr:last-child td { border-bottom: none; }
+/* 5 sütunlu tablolar (üçüncü taraflar) daha geniş; dar ekranda yatay kayar */
+table:has(th:nth-child(5)) { min-width: 820px; }
 
 /* Doğrulanmamış iddialar — yayından önce kapatılacak */
 mark.dogrula {
