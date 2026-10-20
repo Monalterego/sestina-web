@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex">
   <title>Gizlilik Politikası — Sestina</title>
   <link rel="stylesheet" href="style.css">
   <link rel="alternate" hreflang="en" href="privacy.html">
@@ -16,21 +15,23 @@
     </header>
 
     <h1>Gizlilik Politikası</h1>
-    <p class="meta">Son güncelleme: 17 Ekim 2026</p>
+    <p class="meta">Son güncelleme: 20 Ekim 2026</p>
 
-    <p>Bu politika, Sestina mobil uygulamasını (“Uygulama”) kullandığında kişisel verilerinin nasıl işlendiğini açıklar. 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) kapsamında aydınlatma metni ve Avrupa Birliği Genel Veri Koruma Tüzüğü (“GDPR”) kapsamında bilgilendirme olarak hazırlanmıştır.</p>
+    <p>Bu politika, Sestina mobil uygulamasını (“Uygulama”) kullandığında kişisel verilerinin nasıl işlendiğini açıklar. KVKK kapsamındaki aydınlatma metni ayrıca <a href="aydinlatma.html">Aydınlatma Metni</a> sayfasındadır; haklarını kullanmak için <a href="basvuru.html">Başvuru</a> sayfasına bak.</p>
 
     <nav class="toc" aria-label="İçindekiler">
       <ol>
         <li><a href="#sorumlu">Veri sorumlusu</a></li>
         <li><a href="#veriler">Topladığımız veriler</a></li>
-        <li><a href="#riza">Fiziksel profil ve fotoğraf için açık rıza</a></li>
+        <li><a href="#yapay-zeka">Yapay zekâ ile işleme</a></li>
+        <li><a href="#riza">Sanal deneme için açık rıza</a></li>
         <li><a href="#amaclar">Amaçlar ve hukuki sebepler</a></li>
         <li><a href="#ucuncu">Üçüncü taraflar</a></li>
         <li><a href="#aktarim">Yurt dışına aktarım</a></li>
         <li><a href="#abonelik">Abonelik ve ödemeler</a></li>
         <li><a href="#saklama">Saklama süreleri</a></li>
-        <li><a href="#haklar">Hakların</a></li>
+        <li><a href="#haklar">Hakların ve verilerini indirme</a></li>
+        <li><a href="#ab-bk">AB/AEA ve Birleşik Krallık</a></li>
         <li><a href="#cocuklar">Çocuklar</a></li>
         <li><a href="#guvenlik">Güvenlik</a></li>
         <li><a href="#degisiklik">Değişiklikler</a></li>
@@ -40,11 +41,9 @@
 
     <h2 id="sorumlu">1. Veri sorumlusu</h2>
     <p>Veri sorumlusu, Uygulamayı geliştiren bireysel geliştirici <strong>Hasan Can Demircan</strong>’dır. İletişim: <a href="mailto:support@sestinaapp.com">support@sestinaapp.com</a>.</p>
-    <p><mark class="dogrula">[[DOĞRULA: veri sorumlusunun posta adresi eklenecek mi; VERBİS kayıt yükümlülüğü / muafiyeti]]</mark></p>
 
     <h2 id="veriler">2. Topladığımız veriler</h2>
     <p>Uygulamada analitik, reklam veya kullanıcı izleme SDK’sı bulunmaz. Aşağıdaki veriler yalnızca Uygulamanın çalışması için işlenir.</p>
-
     <div class="table-wrap">
       <table>
         <thead>
@@ -62,29 +61,29 @@
             <td>Onboarding’in parçası</td>
           </tr>
           <tr>
-            <td>Fiziksel profil</td>
-            <td>Boy, kilo, yaş, vücut tipi, ten rengi, saç rengi, saç uzunluğu, saç tipi. Yalnızca senin seçtiğin alanlar kaydedilir; dokunmadığın alan boş kalır.</td>
-            <td>Hayır. Tamamen atlanabilir. Kaydetmeden önce açık rızan alınır (bkz. bölüm 3).</td>
+            <td>Kıyafet fotoğrafları</td>
+            <td>Dolabına eklediğin kıyafetlerin görseli ve küçük önizlemesi. Yapay zekâ izni verdiysen arka planı kaldırılmış görsel saklanır; çektiğin orijinal fotoğraf yalnızca arka plan kaldırma için işlenir. İzin vermediysen fotoğraf olduğu gibi saklanır.</td>
+            <td>Dolap özelliği için</td>
+          </tr>
+          <tr>
+            <td>Dolap bilgileri</td>
+            <td>Kategori, alt kategori, renkler, desen, mevsim, kumaş, parça adı, kesim, yaka, kol boyu, detaylar. Yapay zekâ izni verdiysen fotoğraftan çıkarılır; vermediysen sen seçersin.</td>
+            <td>Dolap özelliği için</td>
           </tr>
           <tr>
             <td>Profil fotoğrafı</td>
-            <td>Sanal deneme için galeriden seçtiğin (tercihen tam boy) fotoğraf. İstediğin zaman kaldırabilirsin.</td>
-            <td>Hayır. Yüklemeden önce açık rızan alınır.</td>
+            <td>Sanal deneme için galeriden seçtiğin (tercihen tam boy) fotoğraf.</td>
+            <td>Hayır. Yüklemeden önce açık rızan alınır (bölüm 4).</td>
           </tr>
           <tr>
-            <td>Kıyafet fotoğrafları</td>
-            <td>Dolabına eklediğin kıyafetlerin arka planı kaldırılmış görseli ve küçük önizlemesi. Çektiğin orijinal fotoğraf yalnızca arka plan kaldırma için işlenir, sunucularımızda saklanmaz.</td>
-            <td>Dolap özelliği için</td>
+            <td>Fiziksel profil</td>
+            <td>Boy, kilo, yaş, vücut tipi, ten rengi, saç rengi, saç uzunluğu, saç tipi. Yalnızca senin seçtiğin alanlar kaydedilir.</td>
+            <td>Hayır. Tamamen atlanabilir; kaydetmeden önce açık rızan alınır (bölüm 4).</td>
           </tr>
           <tr>
             <td>Sanal deneme</td>
-            <td>Profil fotoğrafın yoksa fiziksel profilinden üretilen yapay manken görseli; sanal deneme sonuç görselleri.</td>
+            <td>Fiziksel profilinden üretilen yapay manken görseli; sanal deneme sonuç görselleri.</td>
             <td>Yalnızca sanal denemeyi kullanırsan</td>
-          </tr>
-          <tr>
-            <td>Dolap meta verisi</td>
-            <td>Yapay zekânın fotoğraftan çıkardığı bilgiler: kategori, alt kategori, renkler, desen, mevsim, kumaş, parça adı, kesim, yaka, kol boyu, detaylar.</td>
-            <td>Dolap özelliği için</td>
           </tr>
           <tr>
             <td>Kombinler ve takvim</td>
@@ -92,18 +91,28 @@
             <td>Kullandığın ölçüde</td>
           </tr>
           <tr>
-            <td>Mağaza taraması</td>
-            <td>Tara ekranında çektiğin veya seçtiğin ürün fotoğrafı. Analiz edilir, sunucularımızda saklanmaz.</td>
+            <td>“Uyar mı?” taraması</td>
+            <td>Tara ekranında çektiğin veya seçtiğin ürün fotoğrafı. Yalnızca yapay zekâ izni verdiysen çalışır; analiz edilir, sunucularımızda saklanmaz.</td>
             <td>Kullandığın ölçüde</td>
           </tr>
           <tr>
             <td>Konum</td>
-            <td>Yaklaşık konum, yalnızca uygulama açıkken ve izin verirsen. Koordinat cihazında yaklaşık 1 km hassasiyete yuvarlanır ve doğrudan cihazından OpenWeatherMap’e gönderilir; sunucularımıza gönderilmez ve saklanmaz. İzin vermezsen hava durumu İstanbul için gösterilir.</td>
+            <td>Yaklaşık konum, yalnızca Uygulama açıkken ve izin verirsen. Koordinat cihazında yaklaşık 1 km hassasiyete yuvarlanır ve doğrudan cihazından OpenWeather’a gönderilir; sunucularımıza gönderilmez. İzin vermezsen hava durumu İstanbul için gösterilir.</td>
             <td>Hayır</td>
           </tr>
           <tr>
+            <td>Rıza ve izin kayıtları</td>
+            <td>Her rıza ve izin kararın: türü, verildi/verilmedi, onayladığın metnin sürümü ve zamanı. Kayıtlar yalnızca eklenir; sonradan değiştirilemez.</td>
+            <td>Evet (rıza ve izin verdiysen)</td>
+          </tr>
+          <tr>
+            <td>Abonelik</td>
+            <td>Ürün, mağaza, dönem türü, bitiş tarihi, otomatik yenileme.</td>
+            <td>Premium alırsan</td>
+          </tr>
+          <tr>
             <td>Operasyonel</td>
-            <td>Sanal deneme kotası kayıtları (deneme zamanı, kullanılan çağrı sayısı, FASHN işlem kimlikleri ve sonuç bağlantıları), günlük kullanım sayaçları (yapay zekâ analizi, arka plan kaldırma ve “Uyar mı?” taraması için gün başına çağrı sayısı), abonelik durumu (ürün, mağaza, dönem türü, bitiş tarihi, otomatik yenileme), hata ayıklama için sunucu kayıtlarında kullanıcı kimliğin. Servis kesintilerine ilişkin operasyonel olay kayıtları kullanıcı kimliği içermez.</td>
+            <td>Sanal deneme kota kayıtları (deneme zamanı, kullanılan çağrı sayısı, FASHN işlem kimlikleri ve sonuç bağlantıları), günlük kullanım sayaçları (yapay zekâ analizi, arka plan kaldırma, “Uyar mı?” taraması ve veri indirme için gün başına çağrı sayısı), hata ayıklama için sunucu kayıtlarında kullanıcı kimliğin. Servis kesintilerine ilişkin operasyon kayıtları ve hesap silme kayıtları kullanıcı kimliği içermez.</td>
             <td>Evet (kötüye kullanımı önlemek için)</td>
           </tr>
           <tr>
@@ -114,62 +123,80 @@
         </tbody>
       </table>
     </div>
+    <p class="note">Tüm fotoğraflar özel depolarda saklanır. Görselleri yalnızca sen, 1 saat geçerli imzalı bağlantılarla görebilirsin. Bir sanal deneme sonucunu paylaşırsan paylaştığın bağlantı 1 saat sonra geçersiz olur; sonuç depomuza kaydedilemediyse paylaşılan bağlantı FASHN’ın kendi bağlantısıdır ve FASHN’ın üç günlük silme süresine tabidir. FASHN’a giden görsel bağlantıları 10 dakika geçerlidir.</p>
 
-    <p class="note">Tüm fotoğraflar (kıyafet, profil fotoğrafı, yapay manken, sanal deneme sonuçları) özel depolarda saklanır. Görselleri yalnızca sen, 1 saat geçerli imzalı bağlantılarla görebilirsin. Bir sanal deneme sonucunu paylaşırsan paylaştığın bağlantı 1 saat sonra geçersiz olur. Sonuç depomuza kaydedilemediyse paylaşılan bağlantı FASHN’ın kendi bağlantısıdır ve FASHN’ın 72 saatlik silme süresine tabidir. Sanal deneme için FASHN’a giden görsel bağlantıları 10 dakika geçerlidir.</p>
-
-    <h2 id="riza">3. Fiziksel profil ve fotoğraf için açık rıza</h2>
-    <p>Fiziksel profilini ilk kez kaydetmeden veya profil fotoğrafını ilk kez yüklemeden önce Uygulama bir açık rıza ekranı gösterir. Bu ekranda neyin toplandığı, ne için kullanıldığı ve FASHN’a aktarıldığı açıklanır. Rıza vermezsen bu bilgiler kaydedilmez; Uygulamanın geri kalanını kullanmaya devam edebilirsin.</p>
-    <p>Rızanı istediğin zaman <strong>Profil → Rızamı Geri Çek</strong> ile geri alabilirsin. Geri çektiğinde fiziksel bilgilerin, profil fotoğrafın, yapay manken ve tüm sanal deneme görsellerin silinir; dolabın ve kombinlerin kalır.</p>
-
-    <h2 id="amaclar">4. Amaçlar ve hukuki sebepler</h2>
+    <h2 id="yapay-zeka">3. Yapay zekâ ile işleme</h2>
     <div class="table-wrap">
       <table>
         <thead>
-          <tr><th>Amaç</th><th>Veriler</th><th>KVKK</th><th>GDPR</th></tr>
+          <tr><th>Özellik</th><th>Sağlayıcı</th><th>Giden veri</th><th>Gereken izin</th></tr>
         </thead>
         <tbody>
           <tr>
-            <td>Hesap oluşturma, giriş, hesabın yönetimi, yaş onayı</td>
-            <td>Hesap verileri</td>
-            <td>md. 5/2(c) sözleşmenin ifası</td>
-            <td>md. 6(1)(b)</td>
+            <td>Kıyafet ekleme: arka plan kaldırma</td>
+            <td>Poof (Almanya)</td>
+            <td>Kıyafet fotoğrafı</td>
+            <td>Yapay zekâ izni</td>
           </tr>
           <tr>
-            <td>Dijital dolap, kıyafet tanıma, kombin önerisi, takvim, favoriler, mağaza taraması</td>
-            <td>Kıyafet fotoğrafları, meta veri, stil profili, kombinler</td>
-            <td>md. 5/2(c)</td>
-            <td>md. 6(1)(b)</td>
+            <td>Kıyafet ekleme: kategori, renk, desen, mevsim tanıma</td>
+            <td>Anthropic (ABD)</td>
+            <td>Arka planı kaldırılmış kıyafet fotoğrafı</td>
+            <td>Yapay zekâ izni</td>
           </tr>
           <tr>
-            <td>Sanal deneme ve yapay manken</td>
-            <td>Fiziksel profil, profil fotoğrafı, kıyafet görselleri</td>
-            <td>Açık rıza <mark class="dogrula">[[DOĞRULA: ten rengi / fotoğraf / kilo-vücut tipi KVKK md.6 özel nitelikli veri sayılır mı → dayanak md.5/1 mi md.6/2 mi]]</mark></td>
-            <td>md. 6(1)(a) <mark class="dogrula">[[DOĞRULA: GDPR md.9 kapsamı → 9(2)(a) açık rıza gerekir mi]]</mark></td>
+            <td>“Uyar mı?” taraması</td>
+            <td>Poof, Anthropic</td>
+            <td>Ürün fotoğrafı</td>
+            <td>Yapay zekâ izni</td>
           </tr>
           <tr>
-            <td>Hava durumuna göre öneri</td>
-            <td>Yaklaşık konum</td>
-            <td>md. 5/2(c); konum izni cihaz ayarından her an geri alınabilir</td>
-            <td>md. 6(1)(a) / 6(1)(b) <mark class="dogrula">[[DOĞRULA: konum için hukuki sebep]]</mark></td>
+            <td>Stil DNA adı</td>
+            <td>Anthropic</td>
+            <td>Seçtiğin stil adları ve ağırlıkları</td>
+            <td>Yapay zekâ izni</td>
           </tr>
           <tr>
-            <td>Kota, kötüye kullanımın önlenmesi, güvenlik, hata ayıklama</td>
-            <td>Operasyonel veriler, sunucu kayıtları</td>
-            <td>md. 5/2(f) meşru menfaat</td>
-            <td>md. 6(1)(f)</td>
-          </tr>
-          <tr>
-            <td>Destek taleplerine ve hak başvurularına yanıt</td>
-            <td>E-posta yazışmaları</td>
-            <td>md. 5/2(ç) hukuki yükümlülük; md. 5/2(c)</td>
-            <td>md. 6(1)(c), 6(1)(b)</td>
+            <td>Sanal deneme</td>
+            <td>FASHN</td>
+            <td>Profil fotoğrafı veya yapay manken, kıyafet görselleri; manken için fiziksel profil tarifi</td>
+            <td>İki ayrı açık rıza (bölüm 4)</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p>Verilerini reklam, pazarlama amaçlı profilleme veya satış için kullanmayız.</p>
+    <p>İlk kıyafeti eklemeden ve ilk “Uyar mı?” taramasından önce Uygulama yapay zekâ izni ister. İzin yoksa sunucumuz fotoğrafı Poof’a ve Anthropic’e iletmez. İzin vermeden de Uygulamayı kullanabilirsin: kıyafet fotoğrafların olduğu gibi kaydedilir ve kategori, renk ve mevsimi sen seçersin; Stil DNA adı yerel olarak belirlenir; “Uyar mı?” taraması kapalı kalır. Kararını <strong>Profil → Gizlilik ve izinler</strong>’den istediğin zaman değiştirebilirsin; izni geri çekmen mevcut kıyafetlerini silmez. İzin metninin tamamı: <a href="acik-riza.html#ai">Açık Rıza Metinleri</a>.</p>
+    <p><strong>Model eğitimi:</strong> Fotoğrafların ve diğer verilerin bu sağlayıcıların yapay zekâ modellerini eğitmek için kullanılmaz. Anthropic, ticari API üzerinden gelen verileri varsayılan olarak model eğitiminde kullanmaz; Poof görselleri eğitimde kullanmaz; FASHN müşteri içeriğini, ayrı bir sözleşmeyle açıkça kabul edilmedikçe eğitimde kullanmaz (kaynaklar bölüm 6’da).</p>
 
-    <h2 id="ucuncu">5. Üçüncü taraflar</h2>
+    <h2 id="riza">4. Sanal deneme için açık rıza</h2>
+    <p>Sanal deneme iki ayrı açık rızaya dayanır: <strong>fotoğrafın</strong> (profil fotoğrafının FASHN’a gönderilmesi) ve <strong>fiziksel bilgilerin</strong> (yapay manken üretmek için FASHN’a gönderilmesi). Profil fotoğrafını ilk kez yüklemeden ya da fiziksel profili ilk kez kaydetmeden önce Uygulama bilgilendirmeyi gösterir; “Okudum”a dokunmadan rıza verilemez. Rızalar birbirinden bağımsızdır; yalnızca birine rıza verebilirsin. Rıza vermezsen ilgili bilgi kaydedilmez ve Uygulamanın geri kalanını kullanmaya devam edersin.</p>
+    <p>Her rızayı <strong>Profil → Gizlilik ve izinler</strong>’den ayrı ayrı geri çekebilirsin:</p>
+    <ul>
+      <li><strong>Fotoğraf rızası:</strong> fotoğrafın ve onunla oluşturulan sanal deneme görsellerin silinir; fiziksel bilgilerin ve yapay mankenin kalır.</li>
+      <li><strong>Fiziksel bilgiler rızası:</strong> fiziksel bilgilerin, onlardan üretilen yapay manken ve mankenle oluşturulan sanal deneme görsellerin silinir; fotoğrafın kalır.</li>
+    </ul>
+    <p>Rızalar ayrılmadan önce bu bilgileri kaydetmiş kullanıcılara gereken rızalar bir kez yeniden sorulur; verilmeyen rızaya bağlı bilgiler silinir. Rıza metinlerinin tamamı ve sürümleri: <a href="acik-riza.html">Açık Rıza Metinleri</a>.</p>
+
+    <h2 id="amaclar">5. Amaçlar ve hukuki sebepler</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Amaç</th><th>Veriler</th><th>KVKK</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Hesap, dijital dolap, kombin önerileri, takvim, favoriler, hava durumu, abonelik</td><td>Hesap, stil profili, kıyafet fotoğrafları ve bilgileri, kombinler, konum, abonelik</td><td>m. 5/2-c</td></tr>
+          <tr><td>Yapay zekâ ile kıyafet ve ürün tanıma, Stil DNA adı</td><td>Kıyafet ve ürün fotoğrafları, stil adları</td><td>Uygulama içi yapay zekâ izni ve m. 5/2-c</td></tr>
+          <tr><td>Sanal deneme (fotoğrafla)</td><td>Profil fotoğrafı, sonuç görselleri</td><td>Açık rıza (m. 5/1)</td></tr>
+          <tr><td>Sanal deneme (yapay mankenle)</td><td>Fiziksel profil, yapay manken, sonuç görselleri</td><td>Açık rıza (m. 5/1)</td></tr>
+          <tr><td>Rıza ve izin kayıtlarının tutulması</td><td>Rıza ve izin kayıtları</td><td>m. 5/2-ç</td></tr>
+          <tr><td>Güvenlik, kötüye kullanımın önlenmesi, hata ayıklama</td><td>Operasyonel veriler, sunucu kayıtları</td><td>m. 5/2-f</td></tr>
+          <tr><td>Destek ve başvurulara yanıt</td><td>E-posta yazışmaları</td><td>m. 5/2-ç, 5/2-c</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Ayrıntılı tablo (toplama yöntemiyle birlikte): <a href="aydinlatma.html#veriler">Aydınlatma Metni</a>. Verilerini reklam, pazarlama amaçlı profilleme veya satış için kullanmayız.</p>
+
+    <h2 id="ucuncu">6. Üçüncü taraflar</h2>
     <p>Aşağıdaki hizmet sağlayıcılar yalnızca belirtilen işlev için gereken veriyi alır. Yapay zekâ ve görsel servislerine yapılan çağrılar (Anthropic, FASHN, Poof) kendi sunucumuz üzerinden geçer; API anahtarları cihazında bulunmaz.</p>
     <div class="table-wrap">
       <table>
@@ -181,27 +208,27 @@
             <td>Supabase</td>
             <td>Barındırma: veritabanı, kimlik doğrulama, dosya depolama, sunucu fonksiyonları</td>
             <td>Bu politikada sunucuda saklandığı belirtilen tüm veriler</td>
-            <td>AB — Frankfurt, Almanya (eu-central-1)</td>
-            <td>—</td>
+            <td>Frankfurt, Almanya (AB)</td>
+            <td><a href="https://supabase.com/pricing">supabase.com/pricing</a> (log ve yedek süreleri)</td>
           </tr>
           <tr>
             <td>Anthropic (Claude)</td>
-            <td>Kıyafet fotoğrafından kategori, renk, desen vb. çıkarımı; stil profilin için stil adı üretimi</td>
-            <td>Arka planı kaldırılmış kıyafet görseli (dolap ekleme ve mağaza taraması); seçtiğin stil adları ve ağırlıkları. Ad, e-posta, fiziksel profil veya profil fotoğrafı gönderilmez.</td>
+            <td>Kıyafet ve ürün tanıma; Stil DNA adı</td>
+            <td>Arka planı kaldırılmış kıyafet veya ürün fotoğrafı; seçtiğin stil adları ve ağırlıkları. Ad, e-posta, fiziksel profil veya profil fotoğrafı gönderilmez.</td>
             <td>ABD. API girdi ve çıktıları 30 gün içinde silinir (kullanım politikası ihlali veya yasal zorunluluk hâlleri hariç). Ticari API verisi varsayılan olarak model eğitiminde kullanılmaz.</td>
             <td><a href="https://privacy.claude.com/en/articles/7996866">privacy.claude.com</a></td>
           </tr>
           <tr>
-            <td>FASHN</td>
+            <td>FASHN (FASHN LTD)</td>
             <td>Sanal deneme ve yapay manken üretimi</td>
-            <td>10 dakika geçerli imzalı bağlantılarla profil fotoğrafın ya da yapay manken görselin ve kombindeki kıyafet görselleri. Profil fotoğrafın yoksa manken için metin tarif: seçtiğin fiziksel profil alanları (yaş, boy, kilo, vücut tipi, ten rengi, saç rengi/uzunluğu/tipi). Ad veya e-posta gönderilmez.</td>
-            <td>Üretilen görseller 72 saat sonra silinir. Gönderilen görsel bağlantıları FASHN’ın istek geçmişinde tutulur; bağlantılarımız 10 dakikada geçersiz olduğu için sonrasında görsele erişilemez. <mark class="dogrula">[[DOĞRULA: FASHN sunucu konumu]]</mark> <mark class="dogrula">[[DOĞRULA: FASHN gönderilen/üretilen görselleri model eğitiminde kullanıyor mu]]</mark></td>
-            <td><a href="https://docs.fashn.ai/api-overview/data-retention-privacy">docs.fashn.ai</a></td>
+            <td>10 dakika geçerli imzalı bağlantılarla profil fotoğrafın ya da yapay manken görselin ve kombindeki kıyafet görselleri. Profil fotoğrafın yoksa, seçtiğin fiziksel profil alanlarından oluşan manken tarifi. Ad veya e-posta gönderilmez.</td>
+            <td>Birleşik Krallık; alt işleyenleri ABD, Singapur, Malezya, Endonezya, AB ve küresel bulut / içerik dağıtım ağlarında. Üretilen görseller üç gün sonra silinir. Gönderilen görsel bağlantıları istek kaydında tutulur; bağlantılarımız 10 dakikada geçersiz olduğu için sonrasında görsele erişilemez. Müşteri içeriği, ayrı sözleşmeyle açıkça kabul edilmedikçe model eğitiminde kullanılmaz.</td>
+            <td><a href="https://docs.fashn.ai/api-overview/data-retention-privacy">docs.fashn.ai</a>, <a href="https://fashn.ai/legal/subprocessors">alt işleyenler</a></td>
           </tr>
           <tr>
             <td>Poof (Dumpling Software UG)</td>
-            <td>Kıyafet ve ürün fotoğrafının arka planını kaldırma</td>
-            <td>Çektiğin veya seçtiğin kıyafet ya da mağaza ürünü fotoğrafı (küçültülmüş JPEG)</td>
+            <td>Arka plan kaldırma</td>
+            <td>Kıyafet veya ürün fotoğrafı (küçültülmüş JPEG)</td>
             <td>Berlin, Almanya. Görseller bellekte işlenir, sonuç döndükten hemen sonra silinir; model eğitiminde kullanılmaz.</td>
             <td><a href="https://poof.bg/privacy">poof.bg/privacy</a></td>
           </tr>
@@ -209,21 +236,28 @@
             <td>OpenWeather (OpenWeather Ltd)</td>
             <td>Hava durumu</td>
             <td>Yuvarlanmış enlem/boylam (izin verdiysen) veya “İstanbul”. İstek doğrudan cihazından gider.</td>
-            <td>Londra, Birleşik Krallık. API isteklerinde IP adresi, tarayıcı/cihaz bilgisi (user agent) ve istek parametrelerini toplamaz ve saklamaz.</td>
+            <td>Londra, Birleşik Krallık. API isteklerinde IP adresi, user agent ve istek parametrelerini toplamaz ve saklamaz.</td>
             <td><a href="https://openweather.co.uk/privacy-policy">openweather.co.uk</a></td>
           </tr>
           <tr>
-            <td>Apple / Google</td>
-            <td>“Apple ile Giriş” / “Google ile Giriş”</td>
-            <td>Giriş sırasında sağlayıcıyla doğrudan etkileşirsin; biz kimlik tokenını, e-postanı ve (paylaşılırsa) adını alırız. Hesap silmede Apple tokenı iptal edilir ve Google erişimi geri alınır.</td>
-            <td>Sağlayıcının kendi politikası geçerlidir.</td>
-            <td>—</td>
+            <td>RevenueCat, Inc.</td>
+            <td>Abonelik yönetimi</td>
+            <td>Hesap kimliğimiz (e-posta veya ad değil) ve mağazanın bildirdiği satın alma bilgileri</td>
+            <td>ABD. Uygulama kullanıcılarının verisini bizim adımıza, veri işleyen sıfatıyla işler. Hesabını sildiğinde RevenueCat’teki abone kaydın da silinir.</td>
+            <td><a href="https://www.revenuecat.com/privacy/">revenuecat.com/privacy</a></td>
           </tr>
           <tr>
-            <td>Expo (EAS Update)</td>
+            <td>Expo (650 Industries, Inc.)</td>
             <td>Uygulama güncellemelerinin indirilmesi</td>
-            <td>Uygulama açılışında güncelleme sunucusuna istek yapılır. <mark class="dogrula">[[DOĞRULA: expo-updates isteğinde giden veriler (platform, runtime sürümü, kanal, cihaz/istemci kimliği?)]]</mark></td>
-            <td><mark class="dogrula">[[DOĞRULA: Expo konumu ve saklama süresi]]</mark></td>
+            <td>Cihazın işletim sistemi ve uygulama kurulumuna ait rastgele bir kimlik (donanım veya hesap kimliğinden türetilmez)</td>
+            <td>ABD</td>
+            <td><a href="https://expo.dev/privacy">expo.dev/privacy</a>, <a href="https://docs.expo.dev/eas/observe/reference/client-id/">docs.expo.dev</a></td>
+          </tr>
+          <tr>
+            <td>Apple / Google</td>
+            <td>“Apple ile Giriş” / “Google ile Giriş”; mağaza satın almaları</td>
+            <td>Giriş sırasında sağlayıcıyla doğrudan etkileşirsin; biz kimlik tokenını, e-postanı ve (paylaşılırsa) adını alırız. Hesap silmede Apple tokenı iptal edilir ve Google erişimi geri alınır.</td>
+            <td>Sağlayıcının kendi politikası geçerlidir.</td>
             <td>—</td>
           </tr>
         </tbody>
@@ -231,49 +265,68 @@
     </div>
     <p>Bir kombini, stil kartını veya sanal deneme sonucunu paylaşmayı seçersen paylaşım, cihazının paylaşım menüsü üzerinden senin seçtiğin uygulamaya yapılır.</p>
 
-    <h2 id="aktarim">6. Yurt dışına aktarım</h2>
-    <p>Barındırma hizmetimiz ve arka plan kaldırma sağlayıcımız Almanya’da, hava durumu sağlayıcımız Birleşik Krallık’ta, yapay zekâ sağlayıcımız Anthropic ABD’dedir. Bu nedenle kişisel verilerin Türkiye dışına aktarılır.</p>
-    <p><mark class="dogrula">[[DOĞRULA: KVKK md.9 aktarım dayanağı — yeterlilik kararı yoksa standart sözleşme (imza + 5 iş günü içinde Kurul'a bildirim) mi, arızi aktarım için açık rıza mı; her sağlayıcı için ayrı ayrı]]</mark></p>
-    <p><mark class="dogrula">[[DOĞRULA: GDPR kapsamındaki kullanıcılar için AB dışı aktarım dayanağı (SCC / EU-US Data Privacy Framework / BK yeterlilik kararı) — sağlayıcı bazında]]</mark></p>
+    <h2 id="aktarim">7. Yurt dışına aktarım</h2>
+    <p>Kişisel verilerin Türkiye dışına aktarılır: Almanya (Supabase, Poof), Birleşik Krallık (FASHN, OpenWeather), ABD (Anthropic, RevenueCat, Expo) ve FASHN’ın alt işleyenleri aracılığıyla ABD, Singapur, Malezya, Endonezya ve AB. Hangi verinin hangi amaçla aktarıldığı: <a href="aydinlatma.html#aktarim">Aydınlatma Metni, Yurt dışına aktarım</a>.</p>
 
-    <h2 id="abonelik">7. Abonelik ve ödemeler</h2>
-    <p>Ücretli abonelikler App Store veya Google Play üzerinden satın alınır. Ödemeyi Apple veya Google işler; kart bilgilerini görmeyiz. Abonelik durumunu yönetmek için RevenueCat kullanılır. RevenueCat’e kullanıcı kimliğin (hesap kimliğimiz; e-posta veya ad değil) ve mağazanın bildirdiği satın alma bilgileri iletilir. Sunucumuz abonelik durumunu RevenueCat’ten alıp saklar (ürün, mağaza, dönem türü, bitiş tarihi, otomatik yenileme). Hesabını sildiğinde RevenueCat’teki abone kaydın da silinir. Plan limitleri <a href="kosullar.html#planlar">Kullanım Koşulları</a>’nda yer alır.</p>
-    <p><mark class="dogrula">[[DOĞRULA: RevenueCat konumu ve saklama süresi]]</mark></p>
-    <p>Hesabını silmek aboneliğini iptal etmez; iptal için App Store veya Google Play abonelik ayarlarını kullanmalısın.</p>
+    <h2 id="abonelik">8. Abonelik ve ödemeler</h2>
+    <p>Ücretli abonelikler App Store veya Google Play üzerinden satın alınır. Ödemeyi Apple veya Google işler; kart bilgilerini görmeyiz. Abonelik durumunu RevenueCat aracılığıyla alır ve saklarız (ürün, mağaza, dönem türü, bitiş tarihi, otomatik yenileme). Plan limitleri <a href="kosullar.html#planlar">Kullanım Koşulları</a>’ndadır. Hesabını silmek aboneliğini iptal etmez; iptal için App Store veya Google Play abonelik ayarlarını kullanmalısın.</p>
 
-    <h2 id="saklama">8. Saklama süreleri</h2>
+    <h2 id="saklama">9. Saklama süreleri</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Veri</th><th>Süre</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Hesap, stil profili, dolap, kombinler, favoriler, abonelik durumu, sanal deneme kota kayıtları</td><td>Hesabın açık olduğu sürece; hesabı sildiğinde hemen silinir</td></tr>
+          <tr><td>Tek tek silinen kıyafetler</td><td>Kayıt, görselleri ve o kıyafeti içeren sanal deneme görselleri hemen silinir</td></tr>
+          <tr><td>Profil fotoğrafı</td><td>Kaldırana, fotoğraf rızasını geri çekene ya da hesabını silene kadar</td></tr>
+          <tr><td>Fiziksel profil ve yapay manken</td><td>Fiziksel bilgiler rızasını geri çekene ya da hesabını silene kadar</td></tr>
+          <tr><td>Sanal deneme görselleri</td><td>İlgili kıyafet, fotoğraf veya rıza silinene ya da hesabını silene kadar</td></tr>
+          <tr><td>Rıza ve izin kayıtları</td><td>Hesabın açık olduğu sürece; hesabı sildiğinde silinir</td></tr>
+          <tr><td>Günlük kullanım sayaçları</td><td>13 ay</td></tr>
+          <tr><td>Operasyon kayıtları (kullanıcı kimliği içermez)</td><td>12 ay</td></tr>
+          <tr><td>Hesap silme kaydı</td><td>Kullanıcı kimliği ve e-posta içermez; yalnızca silme zamanı, silmenin kanalı (Uygulama, e-posta, 18 yaş altı beyanı), silinen veri türleri ve RevenueCat / Apple adımlarının sonucu. Süre sınırı yoktur.</td></tr>
+          <tr><td>Sunucu kayıtları (log)</td><td>Supabase’in planımıza uyguladığı log saklama süresi; Supabase planlarında bu süre 1 ile 90 gün arasındadır</td></tr>
+          <tr><td>Yedekler</td><td>Supabase’in planımıza uyguladığı yedek saklama süresi</td></tr>
+          <tr><td>“Uyar mı?” fotoğrafları, yapay zekâ izniyle eklenen kıyafetlerin orijinal fotoğrafları, konum</td><td>Sunucularımızda saklanmaz</td></tr>
+          <tr><td>Destek ve başvuru yazışmaları</td><td>Talebin yanıtlanması ve gerektiğinde ispatı için</td></tr>
+          <tr><td>Üçüncü taraflarda</td><td>Bölüm 6’daki süreler</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="haklar">10. Hakların ve verilerini indirme</h2>
+    <p>KVKK m. 11 kapsamındaki hakların <a href="aydinlatma.html#haklar">Aydınlatma Metni</a>’nde listelenir. Uygulamada şunları kendin yapabilirsin:</p>
     <ul>
-      <li><strong>Hesap, stil profili, dolap, kombin, favori, kota ve kullanım sayaçları:</strong> hesabın açık olduğu sürece. Hesabını sildiğinde hemen silinir (bkz. <a href="hesap-silme.html">Hesap Silme</a>).</li>
-      <li><strong>Tek tek silinen kıyafetler:</strong> kayıt, görseller ve o kıyafeti içeren sanal deneme görselleri hemen silinir.</li>
-      <li><strong>Profil fotoğrafı:</strong> kaldırana kadar. Kaldırdığında fotoğrafla birlikte sanal deneme sonuç görsellerin de silinir; fiziksel profilinden üretilen yapay manken kalır.</li>
-      <li><strong>Fiziksel profil ve yapay manken:</strong> rızanı geri çekene veya hesabını silene kadar.</li>
-      <li><strong>Mağaza taraması fotoğrafları, orijinal kıyafet fotoğrafları, konum:</strong> sunucularımızda saklanmaz.</li>
-      <li><strong>Sunucu kayıtları (log):</strong> <mark class="dogrula">[[DOĞRULA: Supabase log saklama süresi]]</mark></li>
-      <li><strong>Yedekler:</strong> <mark class="dogrula">[[DOĞRULA: Supabase yedek saklama süresi — silinen veri yedeklerde ne kadar kalır]]</mark></li>
-      <li><strong>Destek e-postaları:</strong> <mark class="dogrula">[[DOĞRULA: destek yazışmaları saklama süresi (hukuki karar)]]</mark></li>
-      <li><strong>Üçüncü taraflarda:</strong> bölüm 5’teki süreler geçerlidir.</li>
+      <li><strong>Profil → Verilerimi indir:</strong> profilin, stil profilin, dolap bilgilerin, kombinlerin, favorilerin, rıza geçmişin ve abonelik durumun makine tarafından okunabilir bir dosya (JSON) olarak hazırlanır; fotoğrafların için 1 saat geçerli indirme bağlantıları eklenir. Günde en fazla 3 kez.</li>
+      <li>Adını, fiziksel profilini ve dolap bilgilerini düzenleme; kıyafetleri ve profil fotoğrafını silme; izinleri <strong>Profil → Gizlilik ve izinler</strong>’den geri çekme; hesabını silme.</li>
+    </ul>
+    <p>Diğer talepler için: <a href="basvuru.html">Başvuru</a>. Başvurularını en geç 30 gün içinde, ücretsiz yanıtlarız.</p>
+
+    <h2 id="ab-bk">11. AB/AEA ve Birleşik Krallık</h2>
+    <p>AB Genel Veri Koruma Tüzüğü (GDPR) ya da Birleşik Krallık GDPR’ı kapsamındaysan:</p>
+    <ul>
+      <li><strong>Hukuki dayanaklar:</strong> hesap ve temel hizmet için sözleşmenin ifası (m. 6/1-b); yapay zekâ ile işleme için Uygulama içindeki iznin ve sözleşmenin ifası; sanal deneme için açık rızan (m. 6/1-a); güvenlik ve kötüye kullanımın önlenmesi için meşru menfaat (m. 6/1-f).</li>
+      <li><strong>Hakların:</strong> erişim, düzeltme, silme, işlemeyi kısıtlama, itiraz, veri taşınabilirliği ve rızayı her an geri çekme. Başvuru: <a href="basvuru.html">Başvuru</a>.</li>
+      <li><strong>Şikâyet:</strong> Birleşik Krallık’ta <a href="https://ico.org.uk/make-a-complaint/">Information Commissioner’s Office (ICO)</a>’ya; AB/AEA’da bulunduğun ülkenin veri koruma otoritesine.</li>
+      <li><strong>Aktarımlar:</strong> verilerin, bölüm 7’de sayılan ülkelere aktarılır.</li>
     </ul>
 
-    <h2 id="haklar">9. Hakların</h2>
-    <p>KVKK md. 11 uyarınca; kişisel verilerinin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini isteme, KVKK md. 7 çerçevesinde silinmesini veya yok edilmesini isteme, düzeltme ve silme işlemlerinin aktarılan üçüncü kişilere bildirilmesini isteme, münhasıran otomatik sistemlerle analiz edilmesi sonucu aleyhine bir sonuç çıkmasına itiraz etme ve kanuna aykırı işleme sebebiyle zarara uğrarsan zararın giderilmesini talep etme haklarına sahipsin.</p>
-    <p>GDPR kapsamındaysan ayrıca erişim, düzeltme, silme, işlemeyi kısıtlama, veri taşınabilirliği, meşru menfaate dayalı işlemeye itiraz ve rızanı her an geri çekme hakların vardır.</p>
-    <p>Uygulama içinden adını, fiziksel profilini ve dolabını düzenleyebilir; kıyafetleri ve profil fotoğrafını silebilir, açık rızanı geri çekebilir ve hesabını silebilirsin. Diğer talepler için kayıtlı e-posta adresinden <a href="mailto:support@sestinaapp.com">support@sestinaapp.com</a> adresine yaz. Başvurularını en geç 30 gün içinde yanıtlarız.</p>
-    <p>Kişisel Verileri Koruma Kurulu’na veya (AB’deysen) bulunduğun ülkenin veri koruma otoritesine şikâyette bulunma hakkın saklıdır. <mark class="dogrula">[[DOĞRULA: KVKK başvuru usulü (Veri Sorumlusuna Başvuru Usul ve Esasları Tebliği) — e-posta başvurusu için kimlik doğrulama yöntemi]]</mark></p>
+    <h2 id="cocuklar">12. Çocuklar</h2>
+    <p>Sestina 18 yaş ve üzeri kullanıcılar içindir. Hangi yolla giriş yaparsan yap (e-posta, Apple, Google), Uygulamayı kullanmadan önce 18 yaşından büyük olduğunu onaylaman istenir. 18 yaşından küçük olduğunu belirtirsen hesabının ve tüm verilerinin silinmesi başlatılır. 18 yaş altı bir kişiye ait veri işlediğimizi başka bir yolla fark edersek de hesabı ve verileri sileriz; böyle bir durumu <a href="mailto:support@sestinaapp.com">support@sestinaapp.com</a> adresine bildirebilirsin.</p>
 
-    <h2 id="cocuklar">10. Çocuklar</h2>
-    <p>Sestina 18 yaş ve üzeri kullanıcılar içindir. Hangi yolla giriş yaparsan yap (e-posta, Apple, Google), Uygulamayı kullanmadan önce 18 yaşından büyük olduğunu onaylaman istenir. 18 yaşından küçük olduğunu belirtirsen hesabın ve tüm verilerin silinir. 18 yaş altı bir kişiye ait veri işlediğimizi başka bir yolla fark edersek de hesabı ve verileri sileriz; böyle bir durumu <a href="mailto:support@sestinaapp.com">support@sestinaapp.com</a> adresine bildirebilirsin.</p>
+    <h2 id="guvenlik">13. Güvenlik</h2>
+    <p>Uygulama ile sunucularımız ve servis sağlayıcılar arasındaki bağlantılar şifrelidir (HTTPS). Veritabanında ve dosya depolarında satır düzeyinde erişim kuralları vardır; her kullanıcı yalnızca kendi kayıtlarına ve dosyalarına erişebilir. Fotoğraflar özel depolarda tutulur ve yalnızca süreli imzalı bağlantılarla açılır. Üçüncü taraf API anahtarları yalnızca sunucuda tutulur. Kota sayaçları ve rıza kayıtları istemciden değiştirilemez. Hiçbir sistem tamamen güvenli değildir; bir veri ihlali olursa yasal yükümlülüklerimiz çerçevesinde seni ve ilgili otoriteyi bilgilendiririz.</p>
 
-    <h2 id="guvenlik">11. Güvenlik</h2>
-    <p>Uygulama ile sunucularımız ve servis sağlayıcılar arasındaki bağlantılar şifrelidir (HTTPS). Veritabanında ve dosya depolarında satır düzeyinde erişim kuralları vardır; her kullanıcı yalnızca kendi kayıtlarına ve dosyalarına erişebilir. Fotoğraflar özel depolarda tutulur ve yalnızca süreli imzalı bağlantılarla açılır. Üçüncü taraf API anahtarları yalnızca sunucuda tutulur. Kota ve kullanım sayaçları istemciden değiştirilemez. Hiçbir sistem tamamen güvenli değildir; bir veri ihlali olursa yasal yükümlülüklerimiz çerçevesinde seni ve ilgili otoriteyi bilgilendiririz.</p>
+    <h2 id="degisiklik">14. Değişiklikler</h2>
+    <p>Bu politikayı güncelleyebiliriz. Güncel sürüm her zaman bu sayfadadır ve üstteki tarih değişir. Önemli değişiklikleri Uygulama içinde veya e-postayla duyururuz. Her rıza kaydında onayladığın metnin sürümü saklanır; sanal deneme bilgilendirmesi değişirse, yeni bir rıza vermeden önce güncel metni yeniden okuman istenir.</p>
 
-    <h2 id="degisiklik">12. Değişiklikler</h2>
-    <p>Bu politikayı güncelleyebiliriz. Güncel sürüm her zaman bu sayfadadır ve üstteki tarih değişir. Önemli değişiklikleri Uygulama içinde veya e-postayla duyururuz.</p>
-
-    <h2 id="iletisim">13. İletişim</h2>
+    <h2 id="iletisim">15. İletişim</h2>
     <p>Hasan Can Demircan — <a href="mailto:support@sestinaapp.com">support@sestinaapp.com</a></p>
 
     <footer class="site">
-      <a href="./">Ana sayfa</a> · <a href="gizlilik.html">Gizlilik</a> · <a href="kosullar.html">Koşullar</a> · <a href="hesap-silme.html">Hesap Silme</a> · <a href="privacy.html" lang="en">English</a>
+      <a href="./">Ana sayfa</a> · <a href="gizlilik.html">Gizlilik</a> · <a href="aydinlatma.html">Aydınlatma</a> · <a href="acik-riza.html">Açık Rıza</a> · <a href="basvuru.html">Başvuru</a> · <a href="kosullar.html">Koşullar</a> · <a href="hesap-silme.html">Hesap Silme</a> · <a href="privacy.html" lang="en">English</a>
     </footer>
   </div>
 </body>

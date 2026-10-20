@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex">
   <title>Hesap Silme — Sestina</title>
   <link rel="stylesheet" href="style.css">
   <link rel="alternate" hreflang="en" href="delete-account.html">
@@ -16,7 +15,7 @@
     </header>
 
     <h1>Hesap Silme</h1>
-    <p class="meta">Son güncelleme: 17 Ekim 2026</p>
+    <p class="meta">Son güncelleme: 20 Ekim 2026</p>
 
     <p>Sestina hesabını ve hesabına bağlı tüm verileri istediğin zaman silebilirsin. İki yol var: uygulama içinden (anında) veya e-postayla (30 gün içinde).</p>
 
@@ -34,12 +33,13 @@
     <h2 id="eposta">2. E-postayla (uygulamaya erişemiyorsan)</h2>
     <p>Hesabına kayıtlı e-posta adresinden <a href="mailto:support@sestinaapp.com?subject=Hesap%20Silme%20Talebi">support@sestinaapp.com</a> adresine şu konu satırıyla yaz:</p>
     <p class="note"><strong>Konu:</strong> Hesap Silme Talebi</p>
-    <p>Kimliğini doğrulamak için talebin, hesabına kayıtlı adresten gelmelidir. Apple’ın “E-postamı Gizle” özelliğiyle kaydolduysan, Apple’ın sana verdiği yönlendirme adresine bağlı e-postandan yaz. Talebini aldıktan sonra en geç <strong>30 gün</strong> içinde hesabını siler ve sana e-postayla bildiririz.</p>
-    <p><mark class="dogrula">[[DOĞRULA: kayıtlı adres dışından gelen talepler için kimlik doğrulama yöntemi]]</mark></p>
+    <p>Kimliğini doğrulamak için talebin, hesabına kayıtlı adresten gelmelidir. Apple’ın “E-postamı Gizle” özelliğiyle kaydolduysan, Apple’ın sana verdiği yönlendirme adresine bağlı e-postandan yaz. Talebini aldıktan sonra en geç <strong>30 gün</strong> içinde hesabını siler ve sana e-postayla bildiririz. Talep kayıtlı adres dışından gelirse ek kimlik doğrulaması isteriz; doğrulama tamamlanmadan silme yapmayız (bkz. <a href="basvuru.html#kimlik">Başvuru</a>).</p>
+    <p>Silmeden önce verilerinin bir kopyasını almak istersen Uygulamada <strong>Profil → Verilerimi indir</strong>’i kullanabilirsin.</p>
 
     <h2 id="silinenler">3. Silinen veriler</h2>
     <ul>
-      <li>Hesabın: e-posta adresin, adın, giriş bilgilerin, yaş ve rıza onaylarının kaydı</li>
+      <li>Hesabın: e-posta adresin, adın, giriş bilgilerin, yaş onayının kaydı</li>
+      <li>Rıza ve izin kayıtların</li>
       <li>Stil profilin ve fiziksel profilin (boy, kilo, yaş, vücut tipi, ten ve saç bilgileri)</li>
       <li>Dolabındaki tüm kıyafetler ve yapay zekânın çıkardığı bilgiler</li>
       <li>Tüm fotoğrafların: kıyafet görselleri ve önizlemeleri, profil fotoğrafın, yapay manken ve sanal deneme sonuç görselleri</li>
@@ -51,9 +51,10 @@
     <h2 id="silinmeyenler">4. Silinmeyen veya bizim kontrolümüzde olmayan veriler</h2>
     <ul>
       <li><strong>Satın alma kayıtları:</strong> App Store veya Google Play’deki satın alma ve fatura kayıtların Apple ya da Google tarafından tutulur; bunları biz silemeyiz. (Abonelik yönetimi için kullandığımız RevenueCat’teki abone kaydın ise hesabınla birlikte silinir.)</li>
-      <li><strong>Servis sağlayıcılara daha önce iletilmiş veriler:</strong> sağlayıcıların kendi süreleri geçerlidir. Anthropic API girdi ve çıktılarını 30 gün içinde siler. FASHN ürettiği görselleri 72 saat sonra siler; gönderdiğimiz görsel bağlantıları FASHN’ın istek geçmişinde kalır, ancak bu bağlantılar 10 dakikada geçersiz olduğu için görsellere erişilemez. Poof görselleri sonuç döndükten hemen sonra siler. Ayrıntılar: <a href="gizlilik.html#ucuncu">Gizlilik Politikası, bölüm 5</a>.</li>
-      <li><strong>Sunucu kayıtları ve yedekler:</strong> <mark class="dogrula">[[DOĞRULA: Supabase log ve yedek saklama süresi — kullanıcı kimliği loglarda ne kadar kalır]]</mark></li>
-      <li><strong>Destek yazışmaları:</strong> silme talebine ilişkin e-postalar, talebi yerine getirdiğimizi gösterebilmek için saklanabilir. <mark class="dogrula">[[DOĞRULA: destek yazışmaları saklama süresi (hukuki karar)]]</mark></li>
+      <li><strong>Servis sağlayıcılara daha önce iletilmiş veriler:</strong> sağlayıcıların kendi süreleri geçerlidir. Anthropic API girdi ve çıktılarını 30 gün içinde siler. FASHN ürettiği görselleri üç gün sonra siler; gönderdiğimiz görsel bağlantıları FASHN’ın istek kaydında kalır, ancak bu bağlantılar 10 dakikada geçersiz olduğu için görsellere erişilemez. Poof görselleri sonuç döndükten hemen sonra siler. Ayrıntılar: <a href="gizlilik.html#ucuncu">Gizlilik Politikası, bölüm 6</a>.</li>
+      <li><strong>Sunucu kayıtları ve yedekler:</strong> kullanıcı kimliğin, sunucu kayıtlarında ve yedeklerde Supabase’in planımıza uyguladığı saklama süresi dolana kadar kalabilir (bkz. <a href="gizlilik.html#saklama">Gizlilik Politikası, Saklama süreleri</a>).</li>
+      <li><strong>Silme kaydı:</strong> silmenin yapıldığını gösteren, kullanıcı kimliği ve e-posta içermeyen bir kayıt tutulur: silme zamanı, silmenin kanalı, silinen veri türleri ve RevenueCat / Apple adımlarının sonucu.</li>
+      <li><strong>Destek yazışmaları:</strong> silme talebine ilişkin e-postalar, talebi yerine getirdiğimizi gösterebilmek için saklanabilir.</li>
       <li><strong>Cihazındaki veriler:</strong> oturum kapanır; dil gibi cihaz tercihleri uygulamayı kaldırdığında silinir.</li>
     </ul>
 
@@ -67,12 +68,12 @@
     <ul>
       <li><strong>Kıyafet:</strong> dolabından sil; görselleri ve o kıyafeti içeren sanal deneme görselleri de silinir.</li>
       <li><strong>Profil fotoğrafı:</strong> Profil → Fotoğrafım → <strong>Fotoğrafı Kaldır</strong>; fotoğrafın ve sanal deneme sonuç görsellerin silinir.</li>
-      <li><strong>Fiziksel profil ve fotoğraflar:</strong> Profil → <strong>Rızamı Geri Çek</strong>; fiziksel bilgilerin, profil fotoğrafın, yapay manken ve tüm sanal deneme görsellerin silinir. Dolabın ve kombinlerin kalır.</li>
+      <li><strong>Sanal deneme rızaları:</strong> Profil → Gizlilik ve izinler → <strong>İzni geri çek</strong>. Fotoğraf rızasında fotoğrafın ve onunla oluşturulan sanal deneme görsellerin; fiziksel bilgiler rızasında fiziksel bilgilerin, yapay manken ve mankenle oluşturulan sanal deneme görsellerin silinir. Dolabın ve kombinlerin kalır.</li>
     </ul>
-    <p>Diğer talepler için <a href="mailto:support@sestinaapp.com">support@sestinaapp.com</a> adresine yaz. Ayrıntılar için <a href="gizlilik.html">Gizlilik Politikası</a>’na bak.</p>
+    <p>Diğer talepler için <a href="basvuru.html">Başvuru</a> sayfasına bak. Ayrıntılar için <a href="gizlilik.html">Gizlilik Politikası</a>’na bak.</p>
 
     <footer class="site">
-      <a href="./">Ana sayfa</a> · <a href="gizlilik.html">Gizlilik</a> · <a href="kosullar.html">Koşullar</a> · <a href="hesap-silme.html">Hesap Silme</a> · <a href="delete-account.html" lang="en">English</a>
+      <a href="./">Ana sayfa</a> · <a href="gizlilik.html">Gizlilik</a> · <a href="aydinlatma.html">Aydınlatma</a> · <a href="acik-riza.html">Açık Rıza</a> · <a href="basvuru.html">Başvuru</a> · <a href="kosullar.html">Koşullar</a> · <a href="hesap-silme.html">Hesap Silme</a> · <a href="delete-account.html" lang="en">English</a>
     </footer>
   </div>
 </body>
