@@ -31,7 +31,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>Account data: email address, name, password (for email sign-up), Apple / Google identity token, time of your over-18 confirmation</td>
+            <td>Account data: email address, name, password (for email sign-up), Apple / Google identity token, profile picture link when you sign in with Google, time of your over-18 confirmation</td>
             <td>Creating, signing in to and managing your account; applying the age limit</td>
             <td>KVKK Art. 5/2-c (establishing and performing a contract)</td>
             <td>Information you enter on the sign-up and sign-in screens; from the provider when you sign in with Apple or Google</td>
@@ -97,24 +97,24 @@
             <td>Automatically when your account is deleted; by us for deletions requested by email</td>
           </tr>
           <tr>
-            <td>Security and operations records: virtual try-on quota records, daily usage counters, your user ID in server logs</td>
+            <td>Security and operations records: virtual try-on quota records, daily usage counters, your user ID in server logs, sign-in and authentication records (including IP address), database backups</td>
             <td>Preventing misuse, security, debugging, applying plan limits</td>
             <td>KVKK Art. 5/2-f (legitimate interest)</td>
             <td>Automatically while the App runs</td>
           </tr>
           <tr>
             <td>Support and request correspondence</td>
-            <td>Responding to your requests and KVKK applications</td>
+            <td>Responding to your requests and KVKK applications, verifying the applicant’s identity</td>
             <td>KVKK Art. 5/2-ç and 5/2-c</td>
             <td>Emails you send us</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p>Depending on their content and how they are used, your profile photo and virtual try-on images may count as special category personal data under KVKK Art. 6 (e.g. clothing and attire). For this reason virtual try-on is based on your explicit consent, and additional security measures are applied to this data (<a href="privacy.html#consent">Privacy Policy, section 4</a>).</p>
+    <p>Depending on their content and how they are used, your profile photo and virtual try-on images may count as special category personal data under KVKK Art. 6 (e.g. clothing and attire); the skin tone in your physical profile may also count as special category data in terms of race or ethnic origin. For this reason virtual try-on is based on your explicit consent, and additional security measures are applied to this data (<a href="privacy.html#consent">Privacy Policy, section 4</a>).</p>
 
     <h2 id="recipients">3. Recipients</h2>
-    <p>Your personal data is shared with the following service providers only as far as needed for the purposes above: Supabase (hosting), Anthropic (AI clothing recognition and Style DNA name), Poof (background removal), FASHN (virtual try-on), OpenWeather (weather), RevenueCat (subscription management), Expo (app updates), Apple and Google (sign-in and store purchases). The data sent to each is listed in the <a href="privacy.html#third-parties">Privacy Policy</a>. Where legally required, it may also be shared with public authorities entitled to request it.</p>
+    <p>Your personal data is shared with the following service providers only as far as needed for the purposes above: Supabase (hosting), Anthropic (AI clothing recognition and Style DNA name), Poof (background removal), FASHN (virtual try-on), OpenWeather (weather), RevenueCat (subscription management), Expo (app updates), Apple and Google (sign-in and store purchases), Google (storing database backups in Google Drive; receiving support emails in Gmail), Cloudflare (forwarding support emails). The data sent to each is listed in the <a href="privacy.html#third-parties">Privacy Policy</a>. Where legally required, it may also be shared with public authorities entitled to request it.</p>
 
     <h2 id="transfers">4. Transfers abroad</h2>
     <div class="table-wrap">
@@ -171,6 +171,24 @@
             <td>Information you share directly with the provider during sign-in and purchase</td>
             <td>Sign-in, store purchases</td>
           </tr>
+          <tr>
+            <td>Google (Google LLC) — Google Drive</td>
+            <td>USA</td>
+            <td>Database backups encrypted with AES-256 (excluding photos)</td>
+            <td>Storing backups</td>
+          </tr>
+          <tr>
+            <td>Cloudflare, Inc.</td>
+            <td>USA</td>
+            <td>Emails you send us</td>
+            <td>Forwarding support emails</td>
+          </tr>
+          <tr>
+            <td>Google (Google LLC) — Gmail</td>
+            <td>USA</td>
+            <td>Emails you send us and our replies</td>
+            <td>Receiving and storing support and request emails</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -192,7 +210,8 @@
           <tr><td>Operations records (no user ID)</td><td>12 months</td></tr>
           <tr><td>Account deletion record</td><td>Limited to what is needed to show that the deletion took place: the time of deletion, the channel (App, email, under-18 declaration), the types of data deleted, and the outcome of the RevenueCat / Apple steps. Kept for at least 3 years, then deleted.</td></tr>
           <tr><td>Server logs</td><td>1 day</td></tr>
-          <tr><td>Backups</td><td>No automatic backups are taken. The database is backed up manually and encrypted once a week; backups are kept for at most 30 days. Photos are not backed up.</td></tr>
+          <tr><td>Sign-in and authentication records (including IP address)</td><td>1 day in server logs; at most 90 days in authentication audit records. They may remain until this period ends even after you delete your account.</td></tr>
+          <tr><td>Backups</td><td>No automatic backups are taken. The database is backed up manually once a week; backups are encrypted with AES-256 and kept in the data controller’s personal Google Drive account (Google LLC, USA) for at most 30 days. Photos are not backed up.</td></tr>
           <tr><td>“Match?” photos, original photos of clothes added with AI permission, location</td><td>Not stored on our servers</td></tr>
           <tr><td>Support and request correspondence</td><td>2 years from the closing of the request</td></tr>
           <tr><td>At third parties</td><td>The periods stated by the providers (<a href="privacy.html#third-parties">Privacy Policy, Third parties</a>)</td></tr>

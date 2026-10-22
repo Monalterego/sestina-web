@@ -52,7 +52,7 @@
         <tbody>
           <tr>
             <td>Account</td>
-            <td>Email address, name. For email sign-up, a password (stored by Supabase Auth, not in our own tables). With Sign in with Apple or Google, the identity token issued by that provider to verify your account, and your name if Apple shares it on first sign-in. The time you confirmed you are over 18.</td>
+            <td>Email address, name. For email sign-up, a password (stored by Supabase Auth, not in our own tables). With Sign in with Apple or Google, the identity token issued by that provider to verify your account; your name if Apple shares it on first sign-in; with Google, the name and profile picture link that Google shares. The time you confirmed you are over 18.</td>
             <td>Yes (for an account)</td>
           </tr>
           <tr>
@@ -112,7 +112,7 @@
           </tr>
           <tr>
             <td>Operational</td>
-            <td>Virtual try-on quota records (time of each try-on, number of calls used, FASHN job IDs and result links), daily usage counters (calls per day for AI analysis, background removal, “Match?” scans and data downloads), and your user ID in server logs for debugging. Operations records about service outages contain no user ID. For the account deletion record, see section 9.</td>
+            <td>Virtual try-on quota records (time of each try-on, number of calls used, FASHN job IDs and result links), daily usage counters (calls per day for AI analysis, background removal, “Match?” scans and data downloads), and your user ID in server logs for debugging; sign-in, sign-out and session refresh events (including IP address). Operations records about service outages contain no user ID. For the account deletion record, see section 9.</td>
             <td>Yes (to prevent abuse)</td>
           </tr>
           <tr>
@@ -171,7 +171,7 @@
 
     <h2 id="consent">4. Explicit consent for virtual try-on</h2>
     <p>Virtual try-on relies on two separate explicit consents: <strong>your photo</strong> (your profile photo being sent to FASHN) and <strong>your physical details</strong> (being sent to FASHN to generate an AI mannequin). Before you upload a profile photo or save your physical profile for the first time, or start a virtual try-on without the consent it needs, the App shows the notice; consent cannot be given before you tap “I've read this”. The consents are independent; you can agree to just one. If you don’t consent, the related data is not saved and you can keep using the rest of the App. Our server rejects virtual try-on requests made without the required consent.</p>
-    <p><strong>May be special category data:</strong> Depending on their content and how they are used, your profile photo and virtual try-on images may count as special category personal data under KVKK Art. 6 (e.g. clothing and attire). For this reason we base virtual try-on on your explicit consent and apply additional security measures to this data: private storage; signed links valid for 1 hour that only you can create; sending to FASHN only via links valid for 10 minutes; rejecting requests without consent on the server; and deleting the related images when you withdraw consent.</p>
+    <p><strong>May be special category data:</strong> Depending on their content and how they are used, your profile photo and virtual try-on images may count as special category personal data under KVKK Art. 6 (e.g. clothing and attire); the skin tone in your physical profile may also count as special category data in terms of race or ethnic origin. For this reason we base virtual try-on on your explicit consent and apply additional security measures to this data: private storage; signed links valid for 1 hour that only you can create; sending to FASHN only via links valid for 10 minutes; rejecting requests without consent on the server; and deleting the related images when you withdraw consent.</p>
     <p>You can withdraw each consent separately in <strong>Profile → Privacy &amp; permissions</strong>:</p>
     <ul>
       <li><strong>Photo consent:</strong> your photo and the try-on images created with it are deleted; your physical details and AI mannequin stay.</li>
@@ -191,8 +191,9 @@
           <tr><td>Virtual try-on (with photo)</td><td>Profile photo, result images</td><td>Explicit consent (Art. 5/1; Art. 6 to the extent it is special category data)</td></tr>
           <tr><td>Virtual try-on (with AI mannequin)</td><td>Physical profile, AI mannequin, result images</td><td>Explicit consent (Art. 5/1; Art. 6 to the extent it is special category data)</td></tr>
           <tr><td>Keeping consent and permission records; account deletion record</td><td>Consent and permission records; deletion record</td><td>Art. 5/2-ç</td></tr>
-          <tr><td>Security, preventing misuse, debugging</td><td>Operational data, server logs</td><td>Art. 5/2-f</td></tr>
-          <tr><td>Responding to support and requests</td><td>Email correspondence</td><td>Art. 5/2-ç, 5/2-c</td></tr>
+          <tr><td>Security, preventing misuse, debugging</td><td>Operational data, server logs, sign-in records (including IP address)</td><td>Art. 5/2-f</td></tr>
+          <tr><td>Database backups</td><td>Data in the database (excluding photos)</td><td>Art. 5/2-f</td></tr>
+          <tr><td>Responding to support and requests, verifying the applicant’s identity</td><td>Email correspondence</td><td>Art. 5/2-ç, 5/2-c</td></tr>
         </tbody>
       </table>
     </div>
@@ -258,9 +259,30 @@
           <tr>
             <td>Apple / Google</td>
             <td>Sign in with Apple / Sign in with Google; store purchases</td>
-            <td>You interact with the provider directly during sign-in; we receive the identity token, your email and (if shared) your name. On account deletion the Apple token is revoked and Google access is withdrawn.</td>
+            <td>You interact with the provider directly during sign-in; we receive the identity token, your email and (if shared) your name, and with Google also your profile picture link. On account deletion the Apple token is revoked and Google access is withdrawn.</td>
             <td>The provider’s own policy applies.</td>
             <td>—</td>
+          </tr>
+          <tr>
+            <td>Google (Google LLC) — Google Drive</td>
+            <td>Storing database backups</td>
+            <td>Weekly database backup encrypted with AES-256 (photos are not backed up)</td>
+            <td>USA. In the data controller’s personal Google Drive account; backups are kept for at most 30 days.</td>
+            <td><a href="https://policies.google.com/privacy">policies.google.com</a></td>
+          </tr>
+          <tr>
+            <td>Cloudflare, Inc.</td>
+            <td>Forwarding emails sent to support@sestinaapp.com</td>
+            <td>Emails you send us (your address and the content)</td>
+            <td>USA</td>
+            <td><a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></td>
+          </tr>
+          <tr>
+            <td>Google (Google LLC) — Gmail</td>
+            <td>Receiving and storing support and request emails</td>
+            <td>Emails you send us and our replies</td>
+            <td>USA. Kept for 2 years from the closing of the request.</td>
+            <td><a href="https://policies.google.com/privacy">policies.google.com</a></td>
           </tr>
         </tbody>
       </table>
@@ -268,7 +290,7 @@
     <p>If you choose to share an outfit, style card or virtual try-on result, sharing happens through your device’s share sheet to the app you pick.</p>
 
     <h2 id="transfers">7. International transfers</h2>
-    <p>Your personal data is transferred outside Turkey: to Germany (Supabase, Poof), the United Kingdom (FASHN, OpenWeather), the USA (Anthropic, RevenueCat, Expo), and through FASHN’s sub-processors to the USA, Singapore, Malaysia, Indonesia and the EU. Which data is transferred for which purpose: <a href="notice.html#transfers">Privacy Notice, Transfers abroad</a>.</p>
+    <p>Your personal data is transferred outside Turkey: to Germany (Supabase, Poof), the United Kingdom (FASHN, OpenWeather), the USA (Anthropic, RevenueCat, Expo, Cloudflare; Google — database backups and support emails), and through FASHN’s sub-processors to the USA, Singapore, Malaysia, Indonesia and the EU. Which data is transferred for which purpose: <a href="notice.html#transfers">Privacy Notice, Transfers abroad</a>.</p>
 
     <h2 id="subscriptions">8. Subscriptions and payments</h2>
     <p>Paid subscriptions are purchased through the App Store or Google Play. Apple or Google processes the payment; we never see your card details. We receive and store your subscription status through RevenueCat (product, store, period type, expiry date, auto-renewal). Plan limits are set out in the <a href="terms.html#plans">Terms of Use</a>. Deleting your account does not cancel your subscription; cancel it in your App Store or Google Play subscription settings.</p>
@@ -290,7 +312,8 @@
           <tr><td>Operations records (no user ID)</td><td>12 months</td></tr>
           <tr><td>Account deletion record</td><td>Limited to what is needed to show that the deletion took place: the time of deletion, the channel (App, email, under-18 declaration), the types of data deleted, and the outcome of the RevenueCat / Apple steps. Kept for at least 3 years, then deleted.</td></tr>
           <tr><td>Server logs</td><td>1 day</td></tr>
-          <tr><td>Backups</td><td>No automatic backups are taken. The database is backed up manually and encrypted once a week; backups are kept for at most 30 days. Photos are not backed up.</td></tr>
+          <tr><td>Sign-in and authentication records (including IP address)</td><td>1 day in server logs; at most 90 days in authentication audit records. They may remain until this period ends even after you delete your account.</td></tr>
+          <tr><td>Backups</td><td>No automatic backups are taken. The database is backed up manually once a week; backups are encrypted with AES-256 and kept in the data controller’s personal Google Drive account (Google LLC, USA) for at most 30 days. Photos are not backed up.</td></tr>
           <tr><td>“Match?” photos, original photos of clothes added with AI permission, location</td><td>Not stored on our servers</td></tr>
           <tr><td>Support and request correspondence</td><td>2 years from the closing of the request</td></tr>
           <tr><td>At third parties</td><td>The periods in section 6</td></tr>
@@ -320,7 +343,7 @@
     <p>Sestina is for users aged 18 and over. Whichever way you sign in (email, Apple, Google), you are asked to confirm that you are over 18 before using the App. If you indicate that you are under 18, deletion of your account and all your data is started. If we otherwise learn that we are processing data of someone under 18, we will delete the account and its data; you can report this to <a href="mailto:support@sestinaapp.com">support@sestinaapp.com</a>.</p>
 
     <h2 id="security">13. Security</h2>
-    <p>Connections between the App, our servers and service providers are encrypted (HTTPS). The database and file storage enforce row-level access rules, so each user can only access their own records and files. Photos are kept in private storage, opened only through time-limited signed links and not included in backups. Database backups are encrypted. Third-party API keys are kept on the server only. Quota counters and consent records cannot be changed from the App; AI and virtual try-on requests are rejected on the server if the required permission or consent is missing. No system is completely secure; if a data breach occurs, we will notify you and the relevant authority as required by law.</p>
+    <p>Connections between the App, our servers and service providers are encrypted (HTTPS). The database and file storage enforce row-level access rules, so each user can only access their own records and files. Photos are kept in private storage, opened only through time-limited signed links and not included in backups. Database backups are encrypted with AES-256. Third-party API keys are kept on the server only. Quota counters and consent records cannot be changed from the App; AI and virtual try-on requests are rejected on the server if the required permission or consent is missing. No system is completely secure; if a data breach occurs, we will notify you and the relevant authority as required by law.</p>
 
     <h2 id="changes">14. Changes</h2>
     <p>We may update this policy. The current version is always on this page and the date at the top will change. We will announce significant changes in the App or by email. Each consent record stores the version of the text you accepted; if the virtual try-on notice changes, you are asked to read the current text again before giving a new consent.</p>

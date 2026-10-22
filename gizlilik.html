@@ -52,7 +52,7 @@
         <tbody>
           <tr>
             <td>Hesap</td>
-            <td>E-posta adresi, ad. E-postayla kayıtta şifre (Supabase Auth tarafından saklanır; kendi tablolarımızda tutulmaz). Apple veya Google ile girişte, hesabını doğrulamak için o sağlayıcının verdiği kimlik tokenı; Apple ilk girişte adını paylaşırsa ad. 18 yaşından büyük olduğunu onayladığın zaman.</td>
+            <td>E-posta adresi, ad. E-postayla kayıtta şifre (Supabase Auth tarafından saklanır; kendi tablolarımızda tutulmaz). Apple veya Google ile girişte, hesabını doğrulamak için o sağlayıcının verdiği kimlik tokenı; Apple ilk girişte adını paylaşırsa ad; Google ile girişte Google’ın paylaştığı ad ve profil resmi bağlantısı. 18 yaşından büyük olduğunu onayladığın zaman.</td>
             <td>Evet (hesap için)</td>
           </tr>
           <tr>
@@ -112,7 +112,7 @@
           </tr>
           <tr>
             <td>Operasyonel</td>
-            <td>Sanal deneme kota kayıtları (deneme zamanı, kullanılan çağrı sayısı, FASHN işlem kimlikleri ve sonuç bağlantıları), günlük kullanım sayaçları (yapay zekâ analizi, arka plan kaldırma, “Uyar mı?” taraması ve veri indirme için gün başına çağrı sayısı), hata ayıklama için sunucu kayıtlarında kullanıcı kimliğin. Servis kesintilerine ilişkin operasyon kayıtları kullanıcı kimliği içermez. Hesap silme kaydı için bkz. bölüm 9.</td>
+            <td>Sanal deneme kota kayıtları (deneme zamanı, kullanılan çağrı sayısı, FASHN işlem kimlikleri ve sonuç bağlantıları), günlük kullanım sayaçları (yapay zekâ analizi, arka plan kaldırma, “Uyar mı?” taraması ve veri indirme için gün başına çağrı sayısı), hata ayıklama için sunucu kayıtlarında kullanıcı kimliğin; giriş, çıkış ve oturum yenileme olayları (IP adresi dahil). Servis kesintilerine ilişkin operasyon kayıtları kullanıcı kimliği içermez. Hesap silme kaydı için bkz. bölüm 9.</td>
             <td>Evet (kötüye kullanımı önlemek için)</td>
           </tr>
           <tr>
@@ -171,7 +171,7 @@
 
     <h2 id="riza">4. Sanal deneme için açık rıza</h2>
     <p>Sanal deneme iki ayrı açık rızaya dayanır: <strong>fotoğrafın</strong> (profil fotoğrafının FASHN’a gönderilmesi) ve <strong>fiziksel bilgilerin</strong> (yapay manken üretmek için FASHN’a gönderilmesi). Profil fotoğrafını ilk kez yüklemeden, fiziksel profili ilk kez kaydetmeden ya da gereken rıza olmadan sanal denemeyi başlatmadan önce Uygulama bilgilendirmeyi gösterir; “Okudum”a dokunmadan rıza verilemez. Rızalar birbirinden bağımsızdır; yalnızca birine rıza verebilirsin. Rıza vermezsen ilgili bilgi kaydedilmez ve Uygulamanın geri kalanını kullanmaya devam edersin. Gereken rıza olmadan gelen sanal deneme isteklerini sunucumuz reddeder.</p>
-    <p><strong>Özel nitelikli veri olabilir:</strong> Profil fotoğrafın ve sanal deneme görsellerin, içeriklerine ve kullanım biçimlerine göre KVKK m. 6 kapsamında özel nitelikli kişisel veri (ör. kılık ve kıyafet) sayılabilir. Bu nedenle sanal denemeyi açık rızana dayandırırız ve bu verilere ek güvenlik önlemleri uygularız: özel depolama; yalnızca senin oluşturabildiğin, 1 saat geçerli imzalı bağlantılar; FASHN’a yalnızca 10 dakika geçerli bağlantılarla gönderim; rızası olmayan isteklerin sunucuda reddedilmesi ve rızanı geri çektiğinde ilgili görsellerin silinmesi.</p>
+    <p><strong>Özel nitelikli veri olabilir:</strong> Profil fotoğrafın ve sanal deneme görsellerin, içeriklerine ve kullanım biçimlerine göre KVKK m. 6 kapsamında özel nitelikli kişisel veri (ör. kılık ve kıyafet) sayılabilir; fiziksel profilindeki ten rengi bilgisi de ırk veya etnik köken bakımından özel nitelikli veri sayılabilir. Bu nedenle sanal denemeyi açık rızana dayandırırız ve bu verilere ek güvenlik önlemleri uygularız: özel depolama; yalnızca senin oluşturabildiğin, 1 saat geçerli imzalı bağlantılar; FASHN’a yalnızca 10 dakika geçerli bağlantılarla gönderim; rızası olmayan isteklerin sunucuda reddedilmesi ve rızanı geri çektiğinde ilgili görsellerin silinmesi.</p>
     <p>Her rızayı <strong>Profil → Gizlilik ve izinler</strong>’den ayrı ayrı geri çekebilirsin:</p>
     <ul>
       <li><strong>Fotoğraf rızası:</strong> fotoğrafın ve onunla oluşturulan sanal deneme görsellerin silinir; fiziksel bilgilerin ve yapay mankenin kalır.</li>
@@ -191,8 +191,9 @@
           <tr><td>Sanal deneme (fotoğrafla)</td><td>Profil fotoğrafı, sonuç görselleri</td><td>Açık rıza (m. 5/1; özel nitelikli veri sayıldığı ölçüde m. 6)</td></tr>
           <tr><td>Sanal deneme (yapay mankenle)</td><td>Fiziksel profil, yapay manken, sonuç görselleri</td><td>Açık rıza (m. 5/1; özel nitelikli veri sayıldığı ölçüde m. 6)</td></tr>
           <tr><td>Rıza ve izin kayıtlarının tutulması; hesap silme kaydı</td><td>Rıza ve izin kayıtları; silme kaydı</td><td>m. 5/2-ç</td></tr>
-          <tr><td>Güvenlik, kötüye kullanımın önlenmesi, hata ayıklama</td><td>Operasyonel veriler, sunucu kayıtları</td><td>m. 5/2-f</td></tr>
-          <tr><td>Destek ve başvurulara yanıt</td><td>E-posta yazışmaları</td><td>m. 5/2-ç, 5/2-c</td></tr>
+          <tr><td>Güvenlik, kötüye kullanımın önlenmesi, hata ayıklama</td><td>Operasyonel veriler, sunucu kayıtları, giriş kayıtları (IP adresi dahil)</td><td>m. 5/2-f</td></tr>
+          <tr><td>Veritabanı yedekleri</td><td>Veritabanındaki veriler (fotoğraflar hariç)</td><td>m. 5/2-f</td></tr>
+          <tr><td>Destek ve başvurulara yanıt, başvuranın kimliğinin doğrulanması</td><td>E-posta yazışmaları</td><td>m. 5/2-ç, 5/2-c</td></tr>
         </tbody>
       </table>
     </div>
@@ -258,9 +259,30 @@
           <tr>
             <td>Apple / Google</td>
             <td>“Apple ile Giriş” / “Google ile Giriş”; mağaza satın almaları</td>
-            <td>Giriş sırasında sağlayıcıyla doğrudan etkileşirsin; biz kimlik tokenını, e-postanı ve (paylaşılırsa) adını alırız. Hesap silmede Apple tokenı iptal edilir ve Google erişimi geri alınır.</td>
+            <td>Giriş sırasında sağlayıcıyla doğrudan etkileşirsin; biz kimlik tokenını, e-postanı ve (paylaşılırsa) adını, Google ile girişte ayrıca profil resmi bağlantını alırız. Hesap silmede Apple tokenı iptal edilir ve Google erişimi geri alınır.</td>
             <td>Sağlayıcının kendi politikası geçerlidir.</td>
             <td>—</td>
+          </tr>
+          <tr>
+            <td>Google (Google LLC) — Google Drive</td>
+            <td>Veritabanı yedeklerinin saklanması</td>
+            <td>AES-256 ile şifrelenmiş haftalık veritabanı yedeği (fotoğraflar yedeklenmez)</td>
+            <td>ABD. Veri sorumlusunun kişisel Google Drive hesabında; yedekler en fazla 30 gün saklanır.</td>
+            <td><a href="https://policies.google.com/privacy">policies.google.com</a></td>
+          </tr>
+          <tr>
+            <td>Cloudflare, Inc.</td>
+            <td>support@sestinaapp.com adresine gelen e-postaların yönlendirilmesi</td>
+            <td>Bize gönderdiğin e-postalar (adresin ve içerik)</td>
+            <td>ABD</td>
+            <td><a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></td>
+          </tr>
+          <tr>
+            <td>Google (Google LLC) — Gmail</td>
+            <td>Destek ve başvuru e-postalarının alınması ve saklanması</td>
+            <td>Bize gönderdiğin e-postalar ve yanıtlarımız</td>
+            <td>ABD. Talebin kapanmasından itibaren 2 yıl saklanır.</td>
+            <td><a href="https://policies.google.com/privacy">policies.google.com</a></td>
           </tr>
         </tbody>
       </table>
@@ -268,7 +290,7 @@
     <p>Bir kombini, stil kartını veya sanal deneme sonucunu paylaşmayı seçersen paylaşım, cihazının paylaşım menüsü üzerinden senin seçtiğin uygulamaya yapılır.</p>
 
     <h2 id="aktarim">7. Yurt dışına aktarım</h2>
-    <p>Kişisel verilerin Türkiye dışına aktarılır: Almanya (Supabase, Poof), Birleşik Krallık (FASHN, OpenWeather), ABD (Anthropic, RevenueCat, Expo) ve FASHN’ın alt işleyenleri aracılığıyla ABD, Singapur, Malezya, Endonezya ve AB. Hangi verinin hangi amaçla aktarıldığı: <a href="aydinlatma.html#aktarim">Aydınlatma Metni, Yurt dışına aktarım</a>.</p>
+    <p>Kişisel verilerin Türkiye dışına aktarılır: Almanya (Supabase, Poof), Birleşik Krallık (FASHN, OpenWeather), ABD (Anthropic, RevenueCat, Expo, Cloudflare; Google — veritabanı yedekleri ve destek e-postaları) ve FASHN’ın alt işleyenleri aracılığıyla ABD, Singapur, Malezya, Endonezya ve AB. Hangi verinin hangi amaçla aktarıldığı: <a href="aydinlatma.html#aktarim">Aydınlatma Metni, Yurt dışına aktarım</a>.</p>
 
     <h2 id="abonelik">8. Abonelik ve ödemeler</h2>
     <p>Ücretli abonelikler App Store veya Google Play üzerinden satın alınır. Ödemeyi Apple veya Google işler; kart bilgilerini görmeyiz. Abonelik durumunu RevenueCat aracılığıyla alır ve saklarız (ürün, mağaza, dönem türü, bitiş tarihi, otomatik yenileme). Plan limitleri <a href="kosullar.html#planlar">Kullanım Koşulları</a>’ndadır. Hesabını silmek aboneliğini iptal etmez; iptal için App Store veya Google Play abonelik ayarlarını kullanmalısın.</p>
@@ -290,7 +312,8 @@
           <tr><td>Operasyon kayıtları (kullanıcı kimliği içermez)</td><td>12 ay</td></tr>
           <tr><td>Hesap silme kaydı</td><td>Silme işleminin yapıldığını göstermek için gerekli olanla sınırlı bilgi: silme zamanı, silmenin kanalı (Uygulama, e-posta, 18 yaş altı beyanı), silinen veri türleri ve RevenueCat / Apple adımlarının sonucu. En az 3 yıl saklanır, sonra silinir.</td></tr>
           <tr><td>Sunucu kayıtları (log)</td><td>1 gün</td></tr>
-          <tr><td>Yedekler</td><td>Otomatik yedek alınmaz. Veritabanı haftalık olarak elle ve şifreli yedeklenir; yedekler en fazla 30 gün saklanır. Fotoğraflar yedeklenmez.</td></tr>
+          <tr><td>Giriş ve kimlik doğrulama kayıtları (IP adresi dahil)</td><td>Sunucu kayıtlarında 1 gün; kimlik doğrulama denetim kayıtlarında en fazla 90 gün. Hesabını sildikten sonra da bu süre dolana kadar kalabilir.</td></tr>
+          <tr><td>Yedekler</td><td>Otomatik yedek alınmaz. Veritabanı haftalık olarak elle yedeklenir; yedekler AES-256 ile şifrelenerek veri sorumlusunun kişisel Google Drive hesabında (Google LLC, ABD) en fazla 30 gün saklanır. Fotoğraflar yedeklenmez.</td></tr>
           <tr><td>“Uyar mı?” fotoğrafları, yapay zekâ izniyle eklenen kıyafetlerin orijinal fotoğrafları, konum</td><td>Sunucularımızda saklanmaz</td></tr>
           <tr><td>Destek ve başvuru yazışmaları</td><td>Talebin kapanmasından itibaren 2 yıl</td></tr>
           <tr><td>Üçüncü taraflarda</td><td>Bölüm 6’daki süreler</td></tr>
@@ -320,7 +343,7 @@
     <p>Sestina 18 yaş ve üzeri kullanıcılar içindir. Hangi yolla giriş yaparsan yap (e-posta, Apple, Google), Uygulamayı kullanmadan önce 18 yaşından büyük olduğunu onaylaman istenir. 18 yaşından küçük olduğunu belirtirsen hesabının ve tüm verilerinin silinmesi başlatılır. 18 yaş altı bir kişiye ait veri işlediğimizi başka bir yolla fark edersek de hesabı ve verileri sileriz; böyle bir durumu <a href="mailto:support@sestinaapp.com">support@sestinaapp.com</a> adresine bildirebilirsin.</p>
 
     <h2 id="guvenlik">13. Güvenlik</h2>
-    <p>Uygulama ile sunucularımız ve servis sağlayıcılar arasındaki bağlantılar şifrelidir (HTTPS). Veritabanında ve dosya depolarında satır düzeyinde erişim kuralları vardır; her kullanıcı yalnızca kendi kayıtlarına ve dosyalarına erişebilir. Fotoğraflar özel depolarda tutulur, yalnızca süreli imzalı bağlantılarla açılır ve yedeklere alınmaz. Veritabanı yedekleri şifrelidir. Üçüncü taraf API anahtarları yalnızca sunucuda tutulur. Kota sayaçları ve rıza kayıtları istemciden değiştirilemez; yapay zekâ ve sanal deneme istekleri, gereken izin veya rıza yoksa sunucuda reddedilir. Hiçbir sistem tamamen güvenli değildir; bir veri ihlali olursa yasal yükümlülüklerimiz çerçevesinde seni ve ilgili otoriteyi bilgilendiririz.</p>
+    <p>Uygulama ile sunucularımız ve servis sağlayıcılar arasındaki bağlantılar şifrelidir (HTTPS). Veritabanında ve dosya depolarında satır düzeyinde erişim kuralları vardır; her kullanıcı yalnızca kendi kayıtlarına ve dosyalarına erişebilir. Fotoğraflar özel depolarda tutulur, yalnızca süreli imzalı bağlantılarla açılır ve yedeklere alınmaz. Veritabanı yedekleri AES-256 ile şifrelenir. Üçüncü taraf API anahtarları yalnızca sunucuda tutulur. Kota sayaçları ve rıza kayıtları istemciden değiştirilemez; yapay zekâ ve sanal deneme istekleri, gereken izin veya rıza yoksa sunucuda reddedilir. Hiçbir sistem tamamen güvenli değildir; bir veri ihlali olursa yasal yükümlülüklerimiz çerçevesinde seni ve ilgili otoriteyi bilgilendiririz.</p>
 
     <h2 id="degisiklik">14. Değişiklikler</h2>
     <p>Bu politikayı güncelleyebiliriz. Güncel sürüm her zaman bu sayfadadır ve üstteki tarih değişir. Önemli değişiklikleri Uygulama içinde veya e-postayla duyururuz. Her rıza kaydında onayladığın metnin sürümü saklanır; sanal deneme bilgilendirmesi değişirse, yeni bir rıza vermeden önce güncel metni yeniden okuman istenir.</p>
