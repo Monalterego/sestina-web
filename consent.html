@@ -27,13 +27,13 @@
         </thead>
         <tbody>
           <tr><td>AI permission</td><td>In-app preference</td><td>ai_processing</td><td>1.1</td><td>Before your first clothing item and your first “Match?” scan</td></tr>
-          <tr><td>Virtual try-on notice (“I've read this”)</td><td>Notice record</td><td>notice_shown</td><td>1.0</td><td>Before the virtual try-on consents</td></tr>
+          <tr><td>Virtual try-on notice (“I've read this”)</td><td>Notice record</td><td>notice_shown</td><td>2.0</td><td>Before the virtual try-on consents; again for those who read a version before 2.0, the next time the virtual try-on consent screen opens</td></tr>
           <tr><td>Virtual try-on · your photo</td><td>Explicit consent</td><td>tryon_photo</td><td>1.0</td><td>Before you upload a profile photo for the first time, and before you start a virtual try-on with your photo without this consent</td></tr>
           <tr><td>Virtual try-on · your physical details</td><td>Explicit consent</td><td>tryon_physical</td><td>1.0</td><td>Before you save your physical profile for the first time, and before you start a virtual try-on with the AI mannequin without this consent</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="meta">Version numbers use the “major.minor” format. If the major version changes (a change in scope), your earlier choice no longer counts and you are asked again; if the minor version changes (wording or clarification), you are not asked again and a note is shown in <strong>Profile → Privacy &amp; permissions</strong>. AI permission 1.1: “according to the providers” added to the model training sentence.</p>
+    <p class="meta">Version numbers use the “major.minor” format. If the major version changes (a change in scope), your earlier choice no longer counts and you are asked again; if the minor version changes (wording or clarification), you are not asked again and a note is shown in <strong>Profile → Privacy &amp; permissions</strong>. AI permission 1.1: “according to the providers” added to the model training sentence. Virtual try-on notice 2.0: “Special category data” paragraph added (major version; “I've read this” is asked again).</p>
 
     <h2 id="ai">1. AI permission <span class="meta">(ai_processing · 1.1 · in-app preference)</span></h2>
     <div class="note">
@@ -57,7 +57,7 @@
     <p>The virtual try-on screen first shows the notice (“Privacy notice”). The consent boxes cannot be ticked until you tap “I've read this”. Consent for your photo and for your physical details are independent; only the consent needed is asked.</p>
     <p>Depending on their content and how they are used, your profile photo and virtual try-on images may count as special category personal data under KVKK Art. 6 (e.g. clothing and attire); the skin tone in your physical profile may also count as special category data in terms of race or ethnic origin. This is why virtual try-on is based on explicit consent and additional security measures are applied to this data (<a href="privacy.html#consent">Privacy Policy, section 4</a>).</p>
 
-    <h3 id="notice">2.1 Notice <span class="meta">(notice_shown · 1.0)</span></h3>
+    <h3 id="notice">2.1 Notice <span class="meta">(notice_shown · 2.0)</span></h3>
     <div class="note">
       <p><strong>Virtual try-on</strong></p>
       <p>We only process personal details for virtual try-on with your explicit consent. Please read the notice below first.</p>
@@ -65,6 +65,7 @@
       <p><strong>What data?</strong><br>Your full-length photo, if you upload one; your physical details, if you fill them in (height, weight, age, body type, skin tone, hair colour, length and type).</p>
       <p><strong>What for?</strong><br>Only for virtual try-on: to dress your clothes on your photo or on an AI mannequin generated from your physical details. They are not used for outfit suggestions.</p>
       <p><strong>Who receives it?</strong><br>The try-on image is created by the image-generation service FASHN. Your photo is sent to FASHN via a link valid for 10 minutes; your physical details are sent as a description for generating an AI mannequin. Your own photo and physical details are not sent to Anthropic or Poof.</p>
+      <p><strong>Special category data</strong><br>Your profile photo, virtual try-on images and skin tone may count as special category personal data depending on their content and how they are used (clothing and attire; for skin tone, race or ethnic origin). This is why virtual try-on is based on your explicit consent.</p>
       <p><strong>Storage and control</strong><br>This data is kept in your account for as long as your consent lasts. You can withdraw each consent separately in Profile → Privacy &amp; permissions; the data tied to that consent and the images created with it are deleted.</p>
       <p><strong>Your rights</strong><br>You can access your data and ask for it to be corrected or deleted. Use Profile → Download my data to get a copy, or Delete My Account to delete all of it.</p>
       <p>Privacy Policy</p>
