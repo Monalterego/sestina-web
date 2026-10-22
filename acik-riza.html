@@ -15,32 +15,34 @@
     </header>
 
     <h1>Açık Rıza ve İzin Metinleri</h1>
-    <p class="meta">Son güncelleme: 20 Ekim 2026</p>
+    <p class="meta">Yürürlük tarihi: 22 Ekim 2026 · Son güncelleme: 22 Ekim 2026</p>
 
     <p>Bu sayfa, Sestina uygulamasında gösterilen rıza ve izin metinlerinin birebir kopyasıdır. Her kararın, onayladığın metnin sürüm numarasıyla birlikte kaydedilir. Kararlarını istediğin zaman Uygulamada <strong>Profil → Gizlilik ve izinler</strong>’den ayrı ayrı değiştirebilirsin.</p>
+    <p>Bu sayfadaki metinler iki farklı niteliktedir. <strong>Sanal deneme rızaları</strong> (bölüm 2) KVKK m. 5/1 kapsamında açık rızadır. <strong>Yapay zekâ izni</strong> (bölüm 1) ise Uygulama içindeki bir tercihtir; KVKK kapsamında bir işleme şartı değildir. Bu işlemenin hukuki sebebi KVKK m. 5/2-c’dir (sözleşmenin kurulması ve ifası); izin, işlemenin yapılıp yapılmayacağını senin seçimine bırakır.</p>
 
     <div class="table-wrap">
       <table>
         <thead>
-          <tr><th>Metin</th><th>Kayıt türü</th><th>Sürüm</th><th>Ne zaman gösterilir?</th></tr>
+          <tr><th>Metin</th><th>Niteliği</th><th>Kayıt türü</th><th>Sürüm</th><th>Ne zaman gösterilir?</th></tr>
         </thead>
         <tbody>
-          <tr><td>Yapay zekâ izni</td><td>ai_processing</td><td>ai-processing-2026-10-20</td><td>İlk kıyafet eklemeden ve ilk “Uyar mı?” taramasından önce</td></tr>
-          <tr><td>Sanal deneme bilgilendirmesi (“Okudum”)</td><td>notice_shown</td><td>tryon-notice-2026-10-20</td><td>Sanal deneme rızalarından önce</td></tr>
-          <tr><td>Sanal deneme · fotoğrafın</td><td>tryon_photo</td><td>tryon-photo-2026-10-20</td><td>Profil fotoğrafını ilk kez yüklemeden önce</td></tr>
-          <tr><td>Sanal deneme · fiziksel bilgilerin</td><td>tryon_physical</td><td>tryon-physical-2026-10-20</td><td>Fiziksel profili ilk kez kaydetmeden önce</td></tr>
+          <tr><td>Yapay zekâ izni</td><td>Uygulama içi tercih</td><td>ai_processing</td><td>1.1</td><td>İlk kıyafet eklemeden ve ilk “Uyar mı?” taramasından önce</td></tr>
+          <tr><td>Sanal deneme bilgilendirmesi (“Okudum”)</td><td>Aydınlatma kaydı</td><td>notice_shown</td><td>2.0</td><td>Sanal deneme rızalarından önce; 2.0’dan önceki sürümü okuyanlara, sanal deneme rıza ekranı bir sonraki açıldığında yeniden</td></tr>
+          <tr><td>Sanal deneme · fotoğrafın</td><td>Açık rıza</td><td>tryon_photo</td><td>1.0</td><td>Profil fotoğrafını ilk kez yüklemeden ve bu rıza olmadan sanal denemeyi fotoğrafınla başlatmadan önce</td></tr>
+          <tr><td>Sanal deneme · fiziksel bilgilerin</td><td>Açık rıza</td><td>tryon_physical</td><td>1.0</td><td>Fiziksel profili ilk kez kaydetmeden ve bu rıza olmadan sanal denemeyi yapay mankenle başlatmadan önce</td></tr>
         </tbody>
       </table>
     </div>
+    <p class="meta">Sürüm numarası “ana.alt” biçimindedir. Ana sürüm değişirse (kapsam değişikliği) önceki onay geçersiz sayılır ve yeniden sorulur; alt sürüm değişirse (yazım veya netleştirme) yeniden sorulmaz, <strong>Profil → Gizlilik ve izinler</strong>’de not gösterilir. Yapay zekâ izni 1.1: model eğitimi cümlesine “sağlayıcıların beyanına göre” eklendi. Sanal deneme bilgilendirmesi 2.0: “Özel nitelikli veri” paragrafı eklendi (ana sürüm; “Okudum” yeniden istenir).</p>
 
-    <h2 id="ai">1. Yapay zekâ izni <span class="meta">(ai_processing · ai-processing-2026-10-20)</span></h2>
+    <h2 id="ai">1. Yapay zekâ izni <span class="meta">(ai_processing · 1.1 · uygulama içi tercih)</span></h2>
     <div class="note">
       <p><strong>YAPAY ZEKÂ İZNİ</strong></p>
       <p><strong>Fotoğraflarını yapay zekâ ile işleyelim mi?</strong></p>
       <p>Kıyafet eklerken ve “Uyar mı?” taramasında fotoğrafını iki hizmet sağlayıcısına gönderiyoruz. Göndermeden önce iznini istiyoruz.</p>
       <p><strong>Hangi veri?</strong><br>Yalnızca eklediğin kıyafetin ya da taradığın ürünün fotoğrafı. İzin verirsen Stil DNA adını oluşturmak için seçtiğin stil adları da Anthropic'e gönderilir. Kendi fotoğrafın, fiziksel bilgilerin, adın ve e-posta adresin gönderilmez.</p>
       <p><strong>Kime ve neden?</strong><br>Poof · Almanya — Fotoğrafın arka planını kaldırmak için.<br>Anthropic · ABD — Kıyafetin kategori, renk, desen ve mevsim gibi özelliklerini tanımak için.</p>
-      <p><strong>Model eğitimi</strong><br>Gönderilen fotoğraflar bu sağlayıcıların yapay zekâ modellerini eğitmek için kullanılmaz.</p>
+      <p><strong>Model eğitimi</strong><br>Sağlayıcıların beyanına göre, gönderilen fotoğraflar onların yapay zekâ modellerini eğitmek için kullanılmaz.</p>
       <p><strong>İzin vermezsen</strong><br>Uygulamayı kullanmaya devam edersin. Kıyafet fotoğrafların olduğu gibi (arka planı kaldırılmadan) kaydedilir; kategori, renk ve mevsimi sen seçersin. “Uyar mı?” taraması kapalı kalır. Kararını istediğin zaman Profil → Gizlilik ve izinler'den değiştirebilirsin.</p>
       <p>Gizlilik Politikası</p>
       <p>[İzin ver] [Şimdi değil]</p>
@@ -53,8 +55,9 @@
 
     <h2 id="sanal-deneme">2. Sanal deneme: bilgilendirme ve iki ayrı açık rıza</h2>
     <p>Sanal deneme ekranında önce bilgilendirme (“Aydınlatma”) gösterilir. “Okudum”a dokunmadan rıza kutuları işaretlenemez. Fotoğraf ve fiziksel bilgiler için rıza birbirinden bağımsızdır; yalnızca gereken rıza sorulur.</p>
+    <p>Profil fotoğrafın ve sanal deneme görsellerin, içeriklerine ve kullanım biçimlerine göre KVKK m. 6 kapsamında özel nitelikli kişisel veri (ör. kılık ve kıyafet) sayılabilir; fiziksel profilindeki ten rengi bilgisi de ırk veya etnik köken bakımından özel nitelikli veri sayılabilir. Sanal denemenin açık rızaya dayanmasının ve bu verilere ek güvenlik önlemleri uygulanmasının nedeni budur (<a href="gizlilik.html#riza">Gizlilik Politikası, bölüm 4</a>).</p>
 
-    <h3 id="bilgilendirme">2.1 Bilgilendirme <span class="meta">(notice_shown · tryon-notice-2026-10-20)</span></h3>
+    <h3 id="bilgilendirme">2.1 Bilgilendirme <span class="meta">(notice_shown · 2.0)</span></h3>
     <div class="note">
       <p><strong>Sanal deneme</strong></p>
       <p>Sanal deneme için kişisel bilgilerini yalnızca açık rızanla işleriz. Önce aşağıdaki bilgilendirmeyi oku.</p>
@@ -62,6 +65,7 @@
       <p><strong>Hangi veriler?</strong><br>Yüklersen tam boy fotoğrafın; doldurursan fiziksel bilgilerin (boy, kilo, yaş, vücut tipi, ten rengi, saç rengi, uzunluğu ve tipi).</p>
       <p><strong>Ne için?</strong><br>Yalnızca sanal deneme için: kıyafetlerini fotoğrafına ya da fiziksel bilgilerinden üretilen yapay bir mankene giydirmek. Kombin önerilerinde kullanılmaz.</p>
       <p><strong>Kime aktarılıyor?</strong><br>Sanal deneme görselini görsel üretim hizmeti FASHN oluşturur. Fotoğrafın FASHN'a 10 dakika geçerli bir bağlantıyla gönderilir; fiziksel bilgilerin ise yapay manken tarifine dönüştürülerek gönderilir. Kendi fotoğrafın ve fiziksel bilgilerin Anthropic'e ya da Poof'a gönderilmez.</p>
+      <p><strong>Özel nitelikli veri</strong><br>Profil fotoğrafın, sanal deneme görsellerin ve ten rengi bilgin, içeriklerine ve kullanım biçimlerine göre özel nitelikli kişisel veri sayılabilir (kılık-kıyafet; ten rengi bakımından ırk veya etnik köken). Bu nedenle sanal deneme açık rızana dayanır.</p>
       <p><strong>Saklama ve kontrol</strong><br>Bu bilgiler rızan sürdüğü sürece hesabında saklanır. Profil → Gizlilik ve izinler'den her rızayı ayrı ayrı geri çekebilirsin; geri çektiğin rızaya bağlı bilgiler ve onlarla oluşturulan görseller silinir.</p>
       <p><strong>Hakların</strong><br>Verilerine erişebilir, düzeltilmesini ya da silinmesini isteyebilirsin. Profil → Verilerimi indir ile bir kopyasını alabilir, Hesabımı Sil ile tüm verilerini silebilirsin.</p>
       <p>Gizlilik Politikası</p>
@@ -72,7 +76,7 @@
       <p>[Onaylıyorum] [Vazgeç]</p>
     </div>
 
-    <h3 id="fotograf">2.2 Sanal deneme · fotoğrafın <span class="meta">(tryon_photo · tryon-photo-2026-10-20)</span></h3>
+    <h3 id="fotograf">2.2 Sanal deneme · fotoğrafın <span class="meta">(tryon_photo · 1.0 · açık rıza)</span></h3>
     <div class="note">
       <p>☐ Tam boy fotoğrafımın, kıyafetlerin üzerimde denenmesi için FASHN'a gönderilmesine açık rıza veriyorum.</p>
     </div>
@@ -82,7 +86,7 @@
       <p>Geri çekersen fotoğrafın ve onunla oluşturulan sanal deneme görsellerin silinir. Fiziksel bilgilerin ve yapay mankenin kalır.</p>
     </div>
 
-    <h3 id="fiziksel">2.3 Sanal deneme · fiziksel bilgilerin <span class="meta">(tryon_physical · tryon-physical-2026-10-20)</span></h3>
+    <h3 id="fiziksel">2.3 Sanal deneme · fiziksel bilgilerin <span class="meta">(tryon_physical · 1.0 · açık rıza)</span></h3>
     <div class="note">
       <p>☐ Fiziksel bilgilerimin, bana benzeyen yapay bir manken üretmek için FASHN'a gönderilmesine açık rıza veriyorum.</p>
     </div>
@@ -101,7 +105,7 @@
     </div>
 
     <h2 id="durum">3. İzin durumu ve geri çekme</h2>
-    <p><strong>Profil → Gizlilik ve izinler</strong> ekranında her izin için son kararın ve tarihi gösterilir (“İzin verildi · tarih”, “İzin verilmedi · tarih” ya da “Henüz karar vermedin”). Her izni “İzin ver” veya “İzni geri çek” ile ayrı ayrı değiştirebilirsin. Ayrıntılar: <a href="gizlilik.html">Gizlilik Politikası</a>, <a href="aydinlatma.html">Aydınlatma Metni</a>.</p>
+    <p><strong>Profil → Gizlilik ve izinler</strong> ekranında her izin için son kararın ve tarihi gösterilir (“İzin verildi · tarih”, “İzin verilmedi · tarih” ya da “Henüz karar vermedin”). Her izni “İzin ver” veya “İzni geri çek” ile ayrı ayrı değiştirebilirsin. Onayladığın metin sonradan güncellendiyse ekranda not gösterilir; ana sürüm değiştiyse iznin yeniden istenir. Ayrıntılar: <a href="gizlilik.html">Gizlilik Politikası</a>, <a href="aydinlatma.html">Aydınlatma Metni</a>.</p>
 
     <footer class="site">
       <a href="./">Ana sayfa</a> · <a href="gizlilik.html">Gizlilik</a> · <a href="aydinlatma.html">Aydınlatma</a> · <a href="acik-riza.html">Açık Rıza</a> · <a href="basvuru.html">Başvuru</a> · <a href="kosullar.html">Koşullar</a> · <a href="hesap-silme.html">Hesap Silme</a> · <a href="consent.html" lang="en">English</a>
