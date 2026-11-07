@@ -15,7 +15,7 @@
     </header>
 
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: October 22, 2026 · Last updated: October 22, 2026</p>
+    <p class="meta">Effective date: November 7, 2026 · Last updated: November 7, 2026</p>
 
     <p>This policy explains how your personal data is processed when you use the Sestina mobile app (the “App”). The KVKK privacy notice is on the separate <a href="notice.html">Privacy Notice</a> page; to exercise your rights, see the <a href="requests.html">Requests</a> page.</p>
 
@@ -112,7 +112,7 @@
           </tr>
           <tr>
             <td>Operational</td>
-            <td>Virtual try-on quota records (time of each try-on, number of calls used, FASHN job IDs and result links), daily usage counters (calls per day for AI analysis, background removal, “Match?” scans and data downloads), and your user ID in server logs for debugging; sign-in, sign-out and session refresh events (including IP address). Operations records about service outages contain no user ID. For the account deletion record, see section 9.</td>
+            <td>Virtual try-on quota records (time of each try-on, number of calls used, FASHN job IDs), daily usage counters (calls per day for AI analysis, background removal, “Match?” scans and data downloads), and your user ID in server logs for debugging; sign-in, sign-out and session refresh events (including IP address). Operations records about service outages contain no user ID. For the account deletion record, see section 9.</td>
             <td>Yes (to prevent abuse)</td>
           </tr>
           <tr>
@@ -123,7 +123,7 @@
         </tbody>
       </table>
     </div>
-    <p class="note">All photos are stored in private storage. Only you can view them, through signed links valid for 1 hour. If you share a virtual try-on result, the shared link stops working after 1 hour; if the result could not be saved to our storage, the shared link is FASHN’s own link; according to FASHN, these images are deleted after three days. Image links sent to FASHN are valid for 10 minutes.</p>
+    <p class="note">All photos are stored in private storage. Only you can view them, through signed links valid for 1 hour. If you share a virtual try-on result, the shared link stops working after 1 hour; if the result could not be saved to our storage, sharing is turned off. Virtual try-on images are shown from our storage, not through FASHN’s links; images from the intermediate steps of a try-on are deleted from our storage when the try-on ends, within 1 hour at the latest. Image links sent to FASHN are valid for 10 minutes.</p>
 
     <h2 id="ai">3. AI processing</h2>
     <div class="table-wrap">
@@ -133,8 +133,14 @@
         </thead>
         <tbody>
           <tr>
-            <td>Adding clothes: background removal</td>
+            <td>Adding clothes: background removal (during the transition)</td>
             <td>Poof (Germany)</td>
+            <td>Clothing photo</td>
+            <td>AI permission</td>
+          </tr>
+          <tr>
+            <td>Adding clothes: preparing the clothing image (background cleanup, product image; will replace Poof)</td>
+            <td>FASHN (United Kingdom)</td>
             <td>Clothing photo</td>
             <td>AI permission</td>
           </tr>
@@ -165,7 +171,7 @@
         </tbody>
       </table>
     </div>
-    <p>Before your first clothing item and your first “Match?” scan, the App asks for AI permission. Without it, our server does not pass the photo to Poof or Anthropic. You can use the App without giving permission: clothing photos are saved as they are and you choose the category, color and season; the Style DNA name is set locally; “Match?” scans stay off. You can change your choice at any time in <strong>Profile → Privacy &amp; permissions</strong>; withdrawing permission does not delete your existing clothes. Full permission text: <a href="consent.html#ai">Consent and Permission Texts</a>.</p>
+    <p>Before your first clothing item and your first “Match?” scan, the App asks for AI permission. Without it, our server does not pass the photo to Poof, Anthropic, or FASHN for clothing image preparation. When we update the permission text in a way that changes its scope (major version), our server also stops forwarding requests made under a choice given for the earlier version; the App shows the current text and asks for your permission again. You can use the App without giving permission: clothing photos are saved as they are and you choose the category, color and season; the Style DNA name is set locally; “Match?” scans stay off. You can change your choice at any time in <strong>Profile → Privacy &amp; permissions</strong>; withdrawing permission does not delete your existing clothes. Full permission text: <a href="consent.html#ai">Consent and Permission Texts</a>.</p>
     <p><strong>Nature of the AI permission:</strong> The AI permission is an in-app preference; it is not a processing condition under the KVKK. The legal basis for this processing is KVKK Art. 5/2-c (establishing and performing a contract). The permission leaves it to you whether this processing takes place.</p>
     <p><strong>Model training:</strong> According to the providers’ statements, your photos and other data are not used to train their AI models: Anthropic states that it does not use data received through its commercial API for model training by default; Poof states that it does not use images for training; FASHN states that it does not use customer content for training unless expressly agreed in a separate agreement (sources in section 6).</p>
 
@@ -223,14 +229,14 @@
           </tr>
           <tr>
             <td>FASHN (FASHN LTD)</td>
-            <td>Virtual try-on and AI mannequin generation</td>
-            <td>Your profile photo or AI mannequin image and the clothing images in the outfit, via signed links valid for 10 minutes. If you have no profile photo, a mannequin description made from the physical profile fields you chose. No name or email is sent.</td>
-            <td>United Kingdom; sub-processors in the USA, Singapore, Malaysia, Indonesia, the EU and global cloud / content delivery networks. According to the provider, generated images are deleted after three days, submitted image links are kept in the request record, and customer content is not used for model training unless expressly agreed in a separate agreement. Our links expire after 10 minutes.</td>
-            <td><a href="https://docs.fashn.ai/api-overview/data-retention-privacy">docs.fashn.ai</a>, <a href="https://fashn.ai/legal/subprocessors">sub-processors</a></td>
+            <td>Virtual try-on and AI mannequin generation; with AI permission, preparing the clothing image (background cleanup, product image)</td>
+            <td>Your profile photo or AI mannequin image and the clothing images in the outfit, via signed links valid for 10 minutes; intermediate images from our storage during a try-on; the clothing photo when preparing the clothing image. If you have no profile photo, a mannequin description made from the physical profile fields you chose. No name or email is sent.</td>
+            <td>United Kingdom; sub-processors in the USA, Singapore, Malaysia, Indonesia, the EU and global cloud / content delivery networks. It returns generated images directly to us without placing them on a content delivery network; according to the provider, these images are kept by FASHN for at most 60 minutes. The links we send remain in the request record; our links expire after 10 minutes. According to the provider, customer content is not used for model training unless expressly agreed in a separate agreement.</td>
+            <td><a href="https://docs.fashn.ai/api-overview/data-retention-privacy">docs.fashn.ai</a>, <a href="https://fashn.ai/legal/subprocessors">sub-processors</a>, <a href="https://fashn.ai/legal/dpa">data processing addendum</a></td>
           </tr>
           <tr>
             <td>Poof (Dumpling Software UG)</td>
-            <td>Background removal</td>
+            <td>Background removal (during the transition; to be replaced by FASHN)</td>
             <td>Clothing or product photo (downscaled JPEG)</td>
             <td>Berlin, Germany. According to the provider, images are processed in memory, deleted immediately after the result is returned and not used for model training.</td>
             <td><a href="https://poof.bg/privacy">poof.bg/privacy</a></td>
