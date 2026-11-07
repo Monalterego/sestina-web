@@ -107,12 +107,12 @@
           </tr>
           <tr>
             <td>Abonelik</td>
-            <td>Ürün, mağaza, dönem türü, bitiş tarihi, otomatik yenileme.</td>
-            <td>Premium alırsan</td>
+            <td>Ürün, mağaza, dönem türü (ücretsiz deneme / ücretli), dönem başlangıcı, bitiş tarihi, otomatik yenileme; ücretsiz deneme kaydı (başlangıç, bitiş, ücretli aboneliğe geçiş zamanı).</td>
+            <td>Abone olursan ya da ücretsiz denemeyi başlatırsan</td>
           </tr>
           <tr>
             <td>Operasyonel</td>
-            <td>Sanal deneme kota kayıtları (deneme zamanı, kullanılan çağrı sayısı, FASHN işlem kimlikleri), günlük kullanım sayaçları (yapay zekâ analizi, kıyafet görseli hazırlama, “Uyar mı?” taraması ve veri indirme için gün başına çağrı sayısı), hata ayıklama için sunucu kayıtlarında kullanıcı kimliğin; giriş, çıkış ve oturum yenileme olayları (IP adresi dahil). Servis kesintilerine ilişkin operasyon kayıtları kullanıcı kimliği içermez. Hesap silme kaydı için bkz. bölüm 9.</td>
+            <td>Kota kayıtları: sanal deneme (deneme zamanı, kullanılan çağrı sayısı, FASHN işlem kimlikleri), stüdyo görseli (işlem zamanı, FASHN işlem kimliği, ilgili parça) ve “Uyar mı?” (tarama zamanı; fotoğraf yok); günlük kullanım sayaçları (yapay zekâ analizi, kıyafet görseli hazırlama, “Uyar mı?” taraması ve veri indirme için gün başına çağrı sayısı), hata ayıklama için sunucu kayıtlarında kullanıcı kimliğin; giriş, çıkış ve oturum yenileme olayları (IP adresi dahil). Servis kesintilerine ilişkin operasyon kayıtları kullanıcı kimliği içermez. Hesap silme kaydı için bkz. bölüm 9.</td>
             <td>Evet (kötüye kullanımı önlemek için)</td>
           </tr>
           <tr>
@@ -292,7 +292,7 @@
     <p>Kişisel verilerin Türkiye dışına aktarılır: Almanya (Supabase), Birleşik Krallık (FASHN, OpenWeather), ABD (Anthropic, RevenueCat, Expo, Cloudflare; Google — veritabanı yedekleri ve destek e-postaları) ve FASHN’ın alt işleyenleri aracılığıyla ABD, Singapur, Malezya, Endonezya ve AB. Hangi verinin hangi amaçla aktarıldığı: <a href="aydinlatma.html#aktarim">Aydınlatma Metni, Yurt dışına aktarım</a>.</p>
 
     <h2 id="abonelik">8. Abonelik ve ödemeler</h2>
-    <p>Ücretli abonelikler App Store veya Google Play üzerinden satın alınır. Ödemeyi Apple veya Google işler; kart bilgilerini görmeyiz. Abonelik durumunu RevenueCat aracılığıyla alır ve saklarız (ürün, mağaza, dönem türü, bitiş tarihi, otomatik yenileme). Plan limitleri <a href="kosullar.html#planlar">Kullanım Koşulları</a>’ndadır. Hesabını silmek aboneliğini iptal etmez; iptal için App Store veya Google Play abonelik ayarlarını kullanmalısın.</p>
+    <p>Ücretli abonelikler App Store veya Google Play üzerinden satın alınır. Ödemeyi Apple veya Google işler; kart bilgilerini görmeyiz. Abonelik durumunu RevenueCat aracılığıyla alır ve saklarız (ürün, mağaza, dönem türü, dönem başlangıcı, bitiş tarihi, otomatik yenileme). Ücretsiz denemenin başlangıcını, bitişini ve ücretli aboneliğe geçiş zamanını, deneme haklarını ve ücretli ilk ayın haklarını doğru saymak için ayrıca kaydederiz. Uygulamanın özellikleri abonelik ya da ücretsiz deneme gerektirir; haklar ve limitler <a href="kosullar.html#planlar">Kullanım Koşulları</a>’ndadır. Hesabını silmek aboneliğini iptal etmez; iptal için App Store veya Google Play abonelik ayarlarını kullanmalısın.</p>
 
     <h2 id="saklama">9. Saklama süreleri</h2>
     <div class="table-wrap">
@@ -301,7 +301,9 @@
           <tr><th>Veri</th><th>Süre</th></tr>
         </thead>
         <tbody>
-          <tr><td>Hesap, stil profili, dolap, kombinler, favoriler, abonelik durumu, sanal deneme kota kayıtları</td><td>Hesabın açık olduğu sürece; hesabı sildiğinde hemen silinir. Veritabanı kayıtları yedeklerde en fazla 30 gün kalabilir.</td></tr>
+          <tr><td>Hesap, stil profili, dolap, kombinler, favoriler, abonelik durumu, ücretsiz deneme kaydı</td><td>Hesabın açık olduğu sürece; hesabı sildiğinde hemen silinir. Veritabanı kayıtları yedeklerde en fazla 30 gün kalabilir.</td></tr>
+          <tr><td>Hareketsiz hesaplar</td><td>Hiç abone olmadığın ve ücretsiz deneme başlatmadığın bir hesapta 12 ay, aboneliğin ya da ücretsiz denemen sona erdikten sonra 24 ay boyunca giriş yapmazsan hesabın ve tüm verilerin, hesabını kendin silmişsin gibi silinir. Silmeden en az 30 gün önce kayıtlı e-posta adresine bildirim gönderilir; bu sürede giriş yaparsan hesabın silinmez.</td></tr>
+          <tr><td>Kota kayıtları (sanal deneme, stüdyo görseli, “Uyar mı?”)</td><td>13 ay; hesabını silersen hemen silinir</td></tr>
           <tr><td>Tek tek silinen kıyafetler</td><td>Kayıt, görselleri ve o kıyafeti içeren sanal deneme görselleri hemen silinir</td></tr>
           <tr><td>Profil fotoğrafı</td><td>Kaldırana, fotoğraf rızasını geri çekene ya da hesabını silene kadar</td></tr>
           <tr><td>Fiziksel profil ve yapay manken</td><td>Fiziksel bilgiler rızasını geri çekene ya da hesabını silene kadar</td></tr>

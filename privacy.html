@@ -107,12 +107,12 @@
           </tr>
           <tr>
             <td>Subscription</td>
-            <td>Product, store, period type, expiry date, auto-renewal.</td>
-            <td>If you buy Premium</td>
+            <td>Product, store, period type (free trial / paid), period start, expiry date, auto-renewal; free trial record (start, end, time of switching to the paid subscription).</td>
+            <td>If you subscribe or start the free trial</td>
           </tr>
           <tr>
             <td>Operational</td>
-            <td>Virtual try-on quota records (time of each try-on, number of calls used, FASHN job IDs), daily usage counters (calls per day for AI analysis, clothing image preparation, “Match?” scans and data downloads), and your user ID in server logs for debugging; sign-in, sign-out and session refresh events (including IP address). Operations records about service outages contain no user ID. For the account deletion record, see section 9.</td>
+            <td>Quota records: virtual try-on (time of each try-on, number of calls used, FASHN job IDs), studio image (time, FASHN job ID, related item) and “Match?” (time of each scan; no photo); daily usage counters (calls per day for AI analysis, clothing image preparation, “Match?” scans and data downloads), and your user ID in server logs for debugging; sign-in, sign-out and session refresh events (including IP address). Operations records about service outages contain no user ID. For the account deletion record, see section 9.</td>
             <td>Yes (to prevent abuse)</td>
           </tr>
           <tr>
@@ -292,7 +292,7 @@
     <p>Your personal data is transferred outside Turkey: to Germany (Supabase), the United Kingdom (FASHN, OpenWeather), the USA (Anthropic, RevenueCat, Expo, Cloudflare; Google — database backups and support emails), and through FASHN’s sub-processors to the USA, Singapore, Malaysia, Indonesia and the EU. Which data is transferred for which purpose: <a href="notice.html#transfers">Privacy Notice, Transfers abroad</a>.</p>
 
     <h2 id="subscriptions">8. Subscriptions and payments</h2>
-    <p>Paid subscriptions are purchased through the App Store or Google Play. Apple or Google processes the payment; we never see your card details. We receive and store your subscription status through RevenueCat (product, store, period type, expiry date, auto-renewal). Plan limits are set out in the <a href="terms.html#plans">Terms of Use</a>. Deleting your account does not cancel your subscription; cancel it in your App Store or Google Play subscription settings.</p>
+    <p>Paid subscriptions are purchased through the App Store or Google Play. Apple or Google processes the payment; we never see your card details. We receive and store your subscription status through RevenueCat (product, store, period type, period start, expiry date, auto-renewal). We also record when your free trial starts and ends and when it switches to a paid subscription, so trial allowances and the first paid month are counted correctly. The App’s features require a subscription or a free trial; allowances and limits are set out in the <a href="terms.html#plans">Terms of Use</a>. Deleting your account does not cancel your subscription; cancel it in your App Store or Google Play subscription settings.</p>
 
     <h2 id="retention">9. Retention</h2>
     <div class="table-wrap">
@@ -301,7 +301,9 @@
           <tr><th>Data</th><th>Period</th></tr>
         </thead>
         <tbody>
-          <tr><td>Account, style profile, wardrobe, outfits, favorites, subscription status, virtual try-on quota records</td><td>For as long as your account exists; deleted immediately when you delete your account. Database records may remain in backups for up to 30 days.</td></tr>
+          <tr><td>Account, style profile, wardrobe, outfits, favorites, subscription status, free trial record</td><td>For as long as your account exists; deleted immediately when you delete your account. Database records may remain in backups for up to 30 days.</td></tr>
+          <tr><td>Inactive accounts</td><td>If you don’t sign in for 12 months on an account that never had a subscription or free trial, or for 24 months after your subscription or free trial ended, your account and all your data are deleted as if you had deleted the account yourself. We send a notice to your registered email address at least 30 days before deletion; signing in during that time prevents the deletion.</td></tr>
+          <tr><td>Quota records (virtual try-on, studio image, “Match?”)</td><td>13 months; deleted immediately if you delete your account</td></tr>
           <tr><td>Individually deleted clothing items</td><td>The record, its images and any try-on images containing that item are deleted immediately</td></tr>
           <tr><td>Profile photo</td><td>Until you remove it, withdraw photo consent or delete your account</td></tr>
           <tr><td>Physical profile and AI mannequin</td><td>Until you withdraw physical details consent or delete your account</td></tr>
