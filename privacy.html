@@ -62,7 +62,7 @@
           </tr>
           <tr>
             <td>Clothing photos</td>
-            <td>The image and a small thumbnail of each item you add. If you gave AI permission, the background-removed image is stored; the original photo you take is only processed for background removal. If you didn’t, the photo is stored as it is.</td>
+            <td>The image and a small thumbnail of each item you add. The stored image is the studio image you approved (FASHN, with AI permission) or the photo with its background removed on your device; if your device doesn’t support this, the photo is stored as it is. The original photo you take is not stored on our servers.</td>
             <td>For the wardrobe feature</td>
           </tr>
           <tr>
@@ -112,7 +112,7 @@
           </tr>
           <tr>
             <td>Operational</td>
-            <td>Virtual try-on quota records (time of each try-on, number of calls used, FASHN job IDs), daily usage counters (calls per day for AI analysis, background removal, “Match?” scans and data downloads), and your user ID in server logs for debugging; sign-in, sign-out and session refresh events (including IP address). Operations records about service outages contain no user ID. For the account deletion record, see section 9.</td>
+            <td>Virtual try-on quota records (time of each try-on, number of calls used, FASHN job IDs), daily usage counters (calls per day for AI analysis, clothing image preparation, “Match?” scans and data downloads), and your user ID in server logs for debugging; sign-in, sign-out and session refresh events (including IP address). Operations records about service outages contain no user ID. For the account deletion record, see section 9.</td>
             <td>Yes (to prevent abuse)</td>
           </tr>
           <tr>
@@ -133,13 +133,13 @@
         </thead>
         <tbody>
           <tr>
-            <td>Adding clothes: background removal (during the transition)</td>
-            <td>Poof (Germany)</td>
-            <td>Clothing photo</td>
-            <td>AI permission</td>
+            <td>Adding clothes: background removal (on device)</td>
+            <td>None, done on your device</td>
+            <td>No data leaves your device</td>
+            <td>No permission needed</td>
           </tr>
           <tr>
-            <td>Adding clothes: preparing the clothing image (background cleanup, product image; will replace Poof)</td>
+            <td>Adding clothes: preparing the clothing image (studio image)</td>
             <td>FASHN (United Kingdom)</td>
             <td>Clothing photo</td>
             <td>AI permission</td>
@@ -147,13 +147,13 @@
           <tr>
             <td>Adding clothes: recognizing category, color, pattern, season</td>
             <td>Anthropic (USA)</td>
-            <td>Background-removed clothing photo</td>
+            <td>Clothing photo</td>
             <td>AI permission</td>
           </tr>
           <tr>
             <td>“Match?” scans</td>
-            <td>Poof, Anthropic</td>
-            <td>Product photo</td>
+            <td>Anthropic (USA)</td>
+            <td>Product photo (background not removed; not stored)</td>
             <td>AI permission</td>
           </tr>
           <tr>
@@ -171,9 +171,9 @@
         </tbody>
       </table>
     </div>
-    <p>Before your first clothing item and your first “Match?” scan, the App asks for AI permission. Without it, our server does not pass the photo to Poof, Anthropic, or FASHN for clothing image preparation. When we update the permission text in a way that changes its scope (major version), our server also stops forwarding requests made under a choice given for the earlier version; the App shows the current text and asks for your permission again. You can use the App without giving permission: clothing photos are saved as they are and you choose the category, color and season; the Style DNA name is set locally; “Match?” scans stay off. You can change your choice at any time in <strong>Profile → Privacy &amp; permissions</strong>; withdrawing permission does not delete your existing clothes. Full permission text: <a href="consent.html#ai">Consent and Permission Texts</a>.</p>
+    <p>Before your first clothing item and your first “Match?” scan, the App asks for AI permission. Without it, our server does not pass the photo to Anthropic, or to FASHN for clothing image preparation. When we update the permission text in a way that changes its scope (major version), our server also stops forwarding requests made under a choice given for the earlier version; the App shows the current text and asks for your permission again. You can use the App without giving permission: the background of your clothing photo is removed on your device (the photo doesn’t leave your device for this; if your device doesn’t support it, the photo is saved as it is) and you choose the category, color and season; the Style DNA name is set locally; “Match?” scans stay off. You can change your choice at any time in <strong>Profile → Privacy &amp; permissions</strong>; withdrawing permission does not delete your existing clothes. Full permission text: <a href="consent.html#ai">Consent and Permission Texts</a>.</p>
     <p><strong>Nature of the AI permission:</strong> The AI permission is an in-app preference; it is not a processing condition under the KVKK. The legal basis for this processing is KVKK Art. 5/2-c (establishing and performing a contract). The permission leaves it to you whether this processing takes place.</p>
-    <p><strong>Model training:</strong> According to the providers’ statements, your photos and other data are not used to train their AI models: Anthropic states that it does not use data received through its commercial API for model training by default; Poof states that it does not use images for training; FASHN states that it does not use customer content for training unless expressly agreed in a separate agreement (sources in section 6).</p>
+    <p><strong>Model training:</strong> According to the providers’ statements, your photos and other data are not used to train their AI models: Anthropic states that it does not use data received through its commercial API for model training by default; FASHN states that it does not use customer content for training unless expressly agreed in a separate agreement (sources in section 6).</p>
 
     <h2 id="consent">4. Explicit consent for virtual try-on</h2>
     <p>Virtual try-on relies on two separate explicit consents: <strong>your photo</strong> (your profile photo being sent to FASHN) and <strong>your physical details</strong> (being sent to FASHN to generate an AI mannequin). Before you upload a profile photo or save your physical profile for the first time, or start a virtual try-on without the consent it needs, the App shows the notice; consent cannot be given before you tap “I've read this”. The consents are independent; you can agree to just one. If you don’t consent, the related data is not saved and you can keep using the rest of the App. Our server rejects virtual try-on requests made without the required consent.</p>
@@ -206,7 +206,7 @@
     <p>Detailed table (including collection method): <a href="notice.html#data">Privacy Notice</a>. We do not use your data for advertising, marketing profiling, or sale.</p>
 
     <h2 id="third-parties">6. Third parties</h2>
-    <p>The service providers below receive only the data needed for the stated function. Calls to AI and image services (Anthropic, FASHN, Poof) go through our own server; API keys are never on your device.</p>
+    <p>The service providers below receive only the data needed for the stated function. Calls to AI and image services (Anthropic, FASHN) go through our own server; API keys are never on your device.</p>
     <div class="table-wrap">
       <table>
         <thead>
@@ -223,7 +223,7 @@
           <tr>
             <td>Anthropic (Claude)</td>
             <td>Clothing and product recognition; Style DNA name</td>
-            <td>Background-removed clothing or product photo; the style names and weights you picked. No name, email, physical profile or profile photo is sent.</td>
+            <td>Clothing or product photo (downscaled JPEG); the style names and weights you picked. No name, email, physical profile or profile photo is sent.</td>
             <td>USA. According to the provider, API inputs and outputs are deleted within 30 days (except for usage policy violations or legal requirements) and commercial API data is not used for model training by default.</td>
             <td><a href="https://privacy.claude.com/en/articles/7996866">privacy.claude.com</a></td>
           </tr>
@@ -233,13 +233,6 @@
             <td>Your profile photo or AI mannequin image and the clothing images in the outfit, via signed links valid for 10 minutes; intermediate images from our storage during a try-on; the clothing photo when preparing the clothing image. If you have no profile photo, a mannequin description made from the physical profile fields you chose. No name or email is sent.</td>
             <td>United Kingdom; sub-processors in the USA, Singapore, Malaysia, Indonesia, the EU and global cloud / content delivery networks. It returns generated images directly to us without placing them on a content delivery network; according to the provider, these images are kept by FASHN for at most 60 minutes. The links we send remain in the request record; our links expire after 10 minutes. According to the provider, customer content is not used for model training unless expressly agreed in a separate agreement.</td>
             <td><a href="https://docs.fashn.ai/api-overview/data-retention-privacy">docs.fashn.ai</a>, <a href="https://fashn.ai/legal/subprocessors">sub-processors</a>, <a href="https://fashn.ai/legal/dpa">data processing addendum</a></td>
-          </tr>
-          <tr>
-            <td>Poof (Dumpling Software UG)</td>
-            <td>Background removal (during the transition; to be replaced by FASHN)</td>
-            <td>Clothing or product photo (downscaled JPEG)</td>
-            <td>Berlin, Germany. According to the provider, images are processed in memory, deleted immediately after the result is returned and not used for model training.</td>
-            <td><a href="https://poof.bg/privacy">poof.bg/privacy</a></td>
           </tr>
           <tr>
             <td>OpenWeather (OpenWeather Ltd)</td>
@@ -296,7 +289,7 @@
     <p>If you choose to share an outfit, style card or virtual try-on result, sharing happens through your device’s share sheet to the app you pick.</p>
 
     <h2 id="transfers">7. International transfers</h2>
-    <p>Your personal data is transferred outside Turkey: to Germany (Supabase, Poof), the United Kingdom (FASHN, OpenWeather), the USA (Anthropic, RevenueCat, Expo, Cloudflare; Google — database backups and support emails), and through FASHN’s sub-processors to the USA, Singapore, Malaysia, Indonesia and the EU. Which data is transferred for which purpose: <a href="notice.html#transfers">Privacy Notice, Transfers abroad</a>.</p>
+    <p>Your personal data is transferred outside Turkey: to Germany (Supabase), the United Kingdom (FASHN, OpenWeather), the USA (Anthropic, RevenueCat, Expo, Cloudflare; Google — database backups and support emails), and through FASHN’s sub-processors to the USA, Singapore, Malaysia, Indonesia and the EU. Which data is transferred for which purpose: <a href="notice.html#transfers">Privacy Notice, Transfers abroad</a>.</p>
 
     <h2 id="subscriptions">8. Subscriptions and payments</h2>
     <p>Paid subscriptions are purchased through the App Store or Google Play. Apple or Google processes the payment; we never see your card details. We receive and store your subscription status through RevenueCat (product, store, period type, expiry date, auto-renewal). Plan limits are set out in the <a href="terms.html#plans">Terms of Use</a>. Deleting your account does not cancel your subscription; cancel it in your App Store or Google Play subscription settings.</p>
@@ -349,7 +342,7 @@
     <p>Sestina is for users aged 18 and over. Whichever way you sign in (email, Apple, Google), you are asked to confirm that you are over 18 before using the App. If you indicate that you are under 18, deletion of your account and all your data is started. If we otherwise learn that we are processing data of someone under 18, we will delete the account and its data; you can report this to <a href="mailto:support@sestinaapp.com">support@sestinaapp.com</a>.</p>
 
     <h2 id="security">13. Security</h2>
-    <p>Connections between the App, our servers and service providers are encrypted (HTTPS). The database and file storage enforce row-level access rules, so each user can only access their own records and files. Photos are kept in private storage, opened only through time-limited signed links and not included in backups. Database backups are encrypted with AES-256. The API keys of the AI and image services (Anthropic, FASHN, Poof) are kept on the server only. Quota counters and consent records cannot be changed from the App; AI and virtual try-on requests are rejected on the server if the required permission or consent is missing. No system is completely secure; if a data breach occurs, we will notify you and the relevant authority as required by law.</p>
+    <p>Connections between the App, our servers and service providers are encrypted (HTTPS). The database and file storage enforce row-level access rules, so each user can only access their own records and files. Photos are kept in private storage, opened only through time-limited signed links and not included in backups. Database backups are encrypted with AES-256. The API keys of the AI and image services (Anthropic, FASHN) are kept on the server only. Quota counters and consent records cannot be changed from the App; AI and virtual try-on requests are rejected on the server if the required permission or consent is missing. No system is completely secure; if a data breach occurs, we will notify you and the relevant authority as required by law.</p>
 
     <h2 id="changes">14. Changes</h2>
     <p>We may update this policy. The current version is always on this page and the date at the top will change. We will announce significant changes in the App or by email. Each consent record stores the version of the text you accepted; if the virtual try-on notice changes, you are asked to read the current text again before giving a new consent.</p>

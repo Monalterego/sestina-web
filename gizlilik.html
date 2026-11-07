@@ -62,7 +62,7 @@
           </tr>
           <tr>
             <td>Kıyafet fotoğrafları</td>
-            <td>Dolabına eklediğin kıyafetlerin görseli ve küçük önizlemesi. Yapay zekâ izni verdiysen arka planı kaldırılmış görsel saklanır; çektiğin orijinal fotoğraf yalnızca arka plan kaldırma için işlenir. İzin vermediysen fotoğraf olduğu gibi saklanır.</td>
+            <td>Dolabına eklediğin kıyafetlerin görseli ve küçük önizlemesi. Saklanan görsel, onayladığın stüdyo görseli (FASHN, yapay zekâ izniyle) ya da cihazında arka planı kaldırılmış fotoğraftır; cihazın desteklemiyorsa fotoğraf olduğu gibi saklanır. Çektiğin orijinal fotoğraf sunucuda saklanmaz.</td>
             <td>Dolap özelliği için</td>
           </tr>
           <tr>
@@ -112,7 +112,7 @@
           </tr>
           <tr>
             <td>Operasyonel</td>
-            <td>Sanal deneme kota kayıtları (deneme zamanı, kullanılan çağrı sayısı, FASHN işlem kimlikleri), günlük kullanım sayaçları (yapay zekâ analizi, arka plan kaldırma, “Uyar mı?” taraması ve veri indirme için gün başına çağrı sayısı), hata ayıklama için sunucu kayıtlarında kullanıcı kimliğin; giriş, çıkış ve oturum yenileme olayları (IP adresi dahil). Servis kesintilerine ilişkin operasyon kayıtları kullanıcı kimliği içermez. Hesap silme kaydı için bkz. bölüm 9.</td>
+            <td>Sanal deneme kota kayıtları (deneme zamanı, kullanılan çağrı sayısı, FASHN işlem kimlikleri), günlük kullanım sayaçları (yapay zekâ analizi, kıyafet görseli hazırlama, “Uyar mı?” taraması ve veri indirme için gün başına çağrı sayısı), hata ayıklama için sunucu kayıtlarında kullanıcı kimliğin; giriş, çıkış ve oturum yenileme olayları (IP adresi dahil). Servis kesintilerine ilişkin operasyon kayıtları kullanıcı kimliği içermez. Hesap silme kaydı için bkz. bölüm 9.</td>
             <td>Evet (kötüye kullanımı önlemek için)</td>
           </tr>
           <tr>
@@ -133,13 +133,13 @@
         </thead>
         <tbody>
           <tr>
-            <td>Kıyafet ekleme: arka plan kaldırma (geçiş süresince)</td>
-            <td>Poof (Almanya)</td>
-            <td>Kıyafet fotoğrafı</td>
-            <td>Yapay zekâ izni</td>
+            <td>Kıyafet ekleme: arka plan kaldırma (cihaz üzerinde)</td>
+            <td>Yok, cihazında yapılır</td>
+            <td>Veri cihazından çıkmaz</td>
+            <td>İzin gerekmez</td>
           </tr>
           <tr>
-            <td>Kıyafet ekleme: kıyafet görselini hazırlama (arka plan temizleme, ürün görseli; Poof’un yerini alacak)</td>
+            <td>Kıyafet ekleme: kıyafet görselini hazırlama (stüdyo görseli)</td>
             <td>FASHN (Birleşik Krallık)</td>
             <td>Kıyafet fotoğrafı</td>
             <td>Yapay zekâ izni</td>
@@ -147,13 +147,13 @@
           <tr>
             <td>Kıyafet ekleme: kategori, renk, desen, mevsim tanıma</td>
             <td>Anthropic (ABD)</td>
-            <td>Arka planı kaldırılmış kıyafet fotoğrafı</td>
+            <td>Kıyafet fotoğrafı</td>
             <td>Yapay zekâ izni</td>
           </tr>
           <tr>
             <td>“Uyar mı?” taraması</td>
-            <td>Poof, Anthropic</td>
-            <td>Ürün fotoğrafı</td>
+            <td>Anthropic (ABD)</td>
+            <td>Ürün fotoğrafı (arka planı kaldırılmadan; saklanmaz)</td>
             <td>Yapay zekâ izni</td>
           </tr>
           <tr>
@@ -171,9 +171,9 @@
         </tbody>
       </table>
     </div>
-    <p>İlk kıyafeti eklemeden ve ilk “Uyar mı?” taramasından önce Uygulama yapay zekâ izni ister. İzin yoksa sunucumuz fotoğrafı Poof’a, Anthropic’e ve kıyafet görseli hazırlama için FASHN’a iletmez. İzin metnini kapsamı değişecek şekilde güncellediğimizde (ana sürüm), önceki sürüme verilmiş onayla gelen istekleri de iletmez; Uygulama güncel metni gösterip yeniden onayını ister. İzin vermeden de Uygulamayı kullanabilirsin: kıyafet fotoğrafların olduğu gibi kaydedilir ve kategori, renk ve mevsimi sen seçersin; Stil DNA adı yerel olarak belirlenir; “Uyar mı?” taraması kapalı kalır. Kararını <strong>Profil → Gizlilik ve izinler</strong>’den istediğin zaman değiştirebilirsin; izni geri çekmen mevcut kıyafetlerini silmez. İzin metninin tamamı: <a href="acik-riza.html#ai">Rıza ve İzin Metinleri</a>.</p>
+    <p>İlk kıyafeti eklemeden ve ilk “Uyar mı?” taramasından önce Uygulama yapay zekâ izni ister. İzin yoksa sunucumuz fotoğrafı Anthropic’e ve kıyafet görseli hazırlama için FASHN’a iletmez. İzin metnini kapsamı değişecek şekilde güncellediğimizde (ana sürüm), önceki sürüme verilmiş onayla gelen istekleri de iletmez; Uygulama güncel metni gösterip yeniden onayını ister. İzin vermeden de Uygulamayı kullanabilirsin: kıyafet fotoğrafının arka planı cihazında kaldırılır (bu işlem için fotoğraf cihazından çıkmaz; cihazın desteklemiyorsa olduğu gibi kaydedilir) ve kategori, renk ve mevsimi sen seçersin; Stil DNA adı yerel olarak belirlenir; “Uyar mı?” taraması kapalı kalır. Kararını <strong>Profil → Gizlilik ve izinler</strong>’den istediğin zaman değiştirebilirsin; izni geri çekmen mevcut kıyafetlerini silmez. İzin metninin tamamı: <a href="acik-riza.html#ai">Rıza ve İzin Metinleri</a>.</p>
     <p><strong>Yapay zekâ izninin niteliği:</strong> Yapay zekâ izni, Uygulama içindeki bir tercihtir; KVKK kapsamında bir işleme şartı değildir. Bu işlemenin hukuki sebebi KVKK m. 5/2-c’dir (sözleşmenin kurulması ve ifası). İzin, bu işlemenin yapılıp yapılmayacağını senin seçimine bırakır.</p>
-    <p><strong>Model eğitimi:</strong> Sağlayıcıların beyanlarına göre fotoğrafların ve diğer verilerin onların yapay zekâ modellerini eğitmek için kullanılmaz: Anthropic, ticari API üzerinden gelen verileri varsayılan olarak model eğitiminde kullanmadığını; Poof, görselleri eğitimde kullanmadığını; FASHN, müşteri içeriğini ayrı bir sözleşmeyle açıkça kabul edilmedikçe eğitimde kullanmadığını beyan eder (kaynaklar bölüm 6’da).</p>
+    <p><strong>Model eğitimi:</strong> Sağlayıcıların beyanlarına göre fotoğrafların ve diğer verilerin onların yapay zekâ modellerini eğitmek için kullanılmaz: Anthropic, ticari API üzerinden gelen verileri varsayılan olarak model eğitiminde kullanmadığını; FASHN, müşteri içeriğini ayrı bir sözleşmeyle açıkça kabul edilmedikçe eğitimde kullanmadığını beyan eder (kaynaklar bölüm 6’da).</p>
 
     <h2 id="riza">4. Sanal deneme için açık rıza</h2>
     <p>Sanal deneme iki ayrı açık rızaya dayanır: <strong>fotoğrafın</strong> (profil fotoğrafının FASHN’a gönderilmesi) ve <strong>fiziksel bilgilerin</strong> (yapay manken üretmek için FASHN’a gönderilmesi). Profil fotoğrafını ilk kez yüklemeden, fiziksel profili ilk kez kaydetmeden ya da gereken rıza olmadan sanal denemeyi başlatmadan önce Uygulama bilgilendirmeyi gösterir; “Okudum”a dokunmadan rıza verilemez. Rızalar birbirinden bağımsızdır; yalnızca birine rıza verebilirsin. Rıza vermezsen ilgili bilgi kaydedilmez ve Uygulamanın geri kalanını kullanmaya devam edersin. Gereken rıza olmadan gelen sanal deneme isteklerini sunucumuz reddeder.</p>
@@ -206,7 +206,7 @@
     <p>Ayrıntılı tablo (toplama yöntemiyle birlikte): <a href="aydinlatma.html#veriler">Aydınlatma Metni</a>. Verilerini reklam, pazarlama amaçlı profilleme veya satış için kullanmayız.</p>
 
     <h2 id="ucuncu">6. Üçüncü taraflar</h2>
-    <p>Aşağıdaki hizmet sağlayıcılar yalnızca belirtilen işlev için gereken veriyi alır. Yapay zekâ ve görsel servislerine yapılan çağrılar (Anthropic, FASHN, Poof) kendi sunucumuz üzerinden geçer; API anahtarları cihazında bulunmaz.</p>
+    <p>Aşağıdaki hizmet sağlayıcılar yalnızca belirtilen işlev için gereken veriyi alır. Yapay zekâ ve görsel servislerine yapılan çağrılar (Anthropic, FASHN) kendi sunucumuz üzerinden geçer; API anahtarları cihazında bulunmaz.</p>
     <div class="table-wrap">
       <table>
         <thead>
@@ -223,7 +223,7 @@
           <tr>
             <td>Anthropic (Claude)</td>
             <td>Kıyafet ve ürün tanıma; Stil DNA adı</td>
-            <td>Arka planı kaldırılmış kıyafet veya ürün fotoğrafı; seçtiğin stil adları ve ağırlıkları. Ad, e-posta, fiziksel profil veya profil fotoğrafı gönderilmez.</td>
+            <td>Kıyafet veya ürün fotoğrafı (küçültülmüş JPEG); seçtiğin stil adları ve ağırlıkları. Ad, e-posta, fiziksel profil veya profil fotoğrafı gönderilmez.</td>
             <td>ABD. Sağlayıcının beyanına göre API girdi ve çıktıları 30 gün içinde silinir (kullanım politikası ihlali veya yasal zorunluluk hâlleri hariç) ve ticari API verisi varsayılan olarak model eğitiminde kullanılmaz.</td>
             <td><a href="https://privacy.claude.com/en/articles/7996866">privacy.claude.com</a></td>
           </tr>
@@ -233,13 +233,6 @@
             <td>10 dakika geçerli imzalı bağlantılarla profil fotoğrafın ya da yapay manken görselin ve kombindeki kıyafet görselleri; denemenin ara adımlarında depomuzdaki ara görseller; kıyafet görseli hazırlamada kıyafet fotoğrafı. Profil fotoğrafın yoksa, seçtiğin fiziksel profil alanlarından oluşan manken tarifi. Ad veya e-posta gönderilmez.</td>
             <td>Birleşik Krallık; alt işleyenleri ABD, Singapur, Malezya, Endonezya, AB ve küresel bulut / içerik dağıtım ağlarında. Ürettiği görselleri içerik dağıtım ağına koymadan doğrudan bize döndürür; sağlayıcının beyanına göre bu görseller FASHN’da en geç 60 dakika tutulur. İstek kaydında gönderdiğimiz bağlantılar kalır; bağlantılarımız 10 dakikada geçersiz olur. Sağlayıcının beyanına göre müşteri içeriği ayrı sözleşmeyle açıkça kabul edilmedikçe model eğitiminde kullanılmaz.</td>
             <td><a href="https://docs.fashn.ai/api-overview/data-retention-privacy">docs.fashn.ai</a>, <a href="https://fashn.ai/legal/subprocessors">alt işleyenler</a>, <a href="https://fashn.ai/legal/dpa">veri işleme sözleşmesi</a></td>
-          </tr>
-          <tr>
-            <td>Poof (Dumpling Software UG)</td>
-            <td>Arka plan kaldırma (geçiş süresince; yerini FASHN alacak)</td>
-            <td>Kıyafet veya ürün fotoğrafı (küçültülmüş JPEG)</td>
-            <td>Berlin, Almanya. Sağlayıcının beyanına göre görseller bellekte işlenir, sonuç döndükten hemen sonra silinir ve model eğitiminde kullanılmaz.</td>
-            <td><a href="https://poof.bg/privacy">poof.bg/privacy</a></td>
           </tr>
           <tr>
             <td>OpenWeather (OpenWeather Ltd)</td>
@@ -296,7 +289,7 @@
     <p>Bir kombini, stil kartını veya sanal deneme sonucunu paylaşmayı seçersen paylaşım, cihazının paylaşım menüsü üzerinden senin seçtiğin uygulamaya yapılır.</p>
 
     <h2 id="aktarim">7. Yurt dışına aktarım</h2>
-    <p>Kişisel verilerin Türkiye dışına aktarılır: Almanya (Supabase, Poof), Birleşik Krallık (FASHN, OpenWeather), ABD (Anthropic, RevenueCat, Expo, Cloudflare; Google — veritabanı yedekleri ve destek e-postaları) ve FASHN’ın alt işleyenleri aracılığıyla ABD, Singapur, Malezya, Endonezya ve AB. Hangi verinin hangi amaçla aktarıldığı: <a href="aydinlatma.html#aktarim">Aydınlatma Metni, Yurt dışına aktarım</a>.</p>
+    <p>Kişisel verilerin Türkiye dışına aktarılır: Almanya (Supabase), Birleşik Krallık (FASHN, OpenWeather), ABD (Anthropic, RevenueCat, Expo, Cloudflare; Google — veritabanı yedekleri ve destek e-postaları) ve FASHN’ın alt işleyenleri aracılığıyla ABD, Singapur, Malezya, Endonezya ve AB. Hangi verinin hangi amaçla aktarıldığı: <a href="aydinlatma.html#aktarim">Aydınlatma Metni, Yurt dışına aktarım</a>.</p>
 
     <h2 id="abonelik">8. Abonelik ve ödemeler</h2>
     <p>Ücretli abonelikler App Store veya Google Play üzerinden satın alınır. Ödemeyi Apple veya Google işler; kart bilgilerini görmeyiz. Abonelik durumunu RevenueCat aracılığıyla alır ve saklarız (ürün, mağaza, dönem türü, bitiş tarihi, otomatik yenileme). Plan limitleri <a href="kosullar.html#planlar">Kullanım Koşulları</a>’ndadır. Hesabını silmek aboneliğini iptal etmez; iptal için App Store veya Google Play abonelik ayarlarını kullanmalısın.</p>
@@ -349,7 +342,7 @@
     <p>Sestina 18 yaş ve üzeri kullanıcılar içindir. Hangi yolla giriş yaparsan yap (e-posta, Apple, Google), Uygulamayı kullanmadan önce 18 yaşından büyük olduğunu onaylaman istenir. 18 yaşından küçük olduğunu belirtirsen hesabının ve tüm verilerinin silinmesi başlatılır. 18 yaş altı bir kişiye ait veri işlediğimizi başka bir yolla fark edersek de hesabı ve verileri sileriz; böyle bir durumu <a href="mailto:support@sestinaapp.com">support@sestinaapp.com</a> adresine bildirebilirsin.</p>
 
     <h2 id="guvenlik">13. Güvenlik</h2>
-    <p>Uygulama ile sunucularımız ve servis sağlayıcılar arasındaki bağlantılar şifrelidir (HTTPS). Veritabanında ve dosya depolarında satır düzeyinde erişim kuralları vardır; her kullanıcı yalnızca kendi kayıtlarına ve dosyalarına erişebilir. Fotoğraflar özel depolarda tutulur, yalnızca süreli imzalı bağlantılarla açılır ve yedeklere alınmaz. Veritabanı yedekleri AES-256 ile şifrelenir. Yapay zekâ ve görsel servislerinin (Anthropic, FASHN, Poof) API anahtarları yalnızca sunucuda tutulur. Kota sayaçları ve rıza kayıtları istemciden değiştirilemez; yapay zekâ ve sanal deneme istekleri, gereken izin veya rıza yoksa sunucuda reddedilir. Hiçbir sistem tamamen güvenli değildir; bir veri ihlali olursa yasal yükümlülüklerimiz çerçevesinde seni ve ilgili otoriteyi bilgilendiririz.</p>
+    <p>Uygulama ile sunucularımız ve servis sağlayıcılar arasındaki bağlantılar şifrelidir (HTTPS). Veritabanında ve dosya depolarında satır düzeyinde erişim kuralları vardır; her kullanıcı yalnızca kendi kayıtlarına ve dosyalarına erişebilir. Fotoğraflar özel depolarda tutulur, yalnızca süreli imzalı bağlantılarla açılır ve yedeklere alınmaz. Veritabanı yedekleri AES-256 ile şifrelenir. Yapay zekâ ve görsel servislerinin (Anthropic, FASHN) API anahtarları yalnızca sunucuda tutulur. Kota sayaçları ve rıza kayıtları istemciden değiştirilemez; yapay zekâ ve sanal deneme istekleri, gereken izin veya rıza yoksa sunucuda reddedilir. Hiçbir sistem tamamen güvenli değildir; bir veri ihlali olursa yasal yükümlülüklerimiz çerçevesinde seni ve ilgili otoriteyi bilgilendiririz.</p>
 
     <h2 id="degisiklik">14. Değişiklikler</h2>
     <p>Bu politikayı güncelleyebiliriz. Güncel sürüm her zaman bu sayfadadır ve üstteki tarih değişir. Önemli değişiklikleri Uygulama içinde veya e-postayla duyururuz. Her rıza kaydında onayladığın metnin sürümü saklanır; sanal deneme bilgilendirmesi değişirse, yeni bir rıza vermeden önce güncel metni yeniden okuman istenir.</p>
